@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import os
+
 from flask import Flask, jsonify, render_template
 
 from config import PORT, ensure_dirs
