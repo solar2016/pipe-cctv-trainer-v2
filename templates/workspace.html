@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}工作台 - Pipe CCTV Trainer{% endblock %}
+{% block content %}
+<div class="workspace-layout">
+  <!-- Left: 样本列表 -->
+  <div class="panel panel-l">
+    <div class="panel-hd">
+      <h3>样本列表</h3>
+      <div class="panel-actions">
+        <select id="filter-code" class="filter-select">
+          <option value="">全部类型</option>
+        </select>
+        <input type="text" id="search-input" class="search-input" placeholder="搜索编号...">
+      </div>
+    </div>
+    <div class="panel-body" id="sample-list"></div>
+    <div class="panel-ft">
+      <div class="upload-zone" id="upload-zone">
+        <input type="file" id="file-input" multiple accept="image/*,video/*" hidden>
+        <button class="btn btn-sm" onclick="document.getElementById('file-input').click()">+ 上传图片/视频</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Center: 图片查看 -->
+  <div class="panel panel-c">
+    <div class="panel-hd">
+      <h3 id="current-sample-id">选择样本</h3>
+      <div class="panel-actions">
+        <button class="btn btn-primary btn-sm" id="btn-predict" disabled>预测</button>
+        <button class="btn btn-sm" id="btn-predict-fewshot" disabled>预测(fewshot)</button>
+      </div>
+    </div>
+    <div class="panel-body image-viewer" id="image-viewer">
+      <div class="empty-state">选择左侧样本开始</div>
+    </div>
+  </div>
+
+  <!-- Right: 操作区 -->
+  <div class="panel panel-r">
+    <div class="panel-hd">
+      <h3>操作</h3>
+    </div>
+    <div class="panel-body" id="action-panel">
+      <!-- Tabs: 预测结果 / 人工纠正 / 锚点 -->
+      <div class="action-tabs">
+        <button class="action-tab active" data-tab="result">预测结果</button>
+        <button class="action-tab" data-tab="correct">人工纠正</button>
+        <button class="action-tab" data-tab="anchor">锚点管理</button>
+      </div>
+      <div class="action-content" id="tab-result">
+        <div class="empty-state">等待预测</div>
+      </div>
+      <div class="action-content" id="tab-correct" style="display:none">
+        <form id="correct-form">
+          <label>缺陷代码</label>
+          <select id="correct-code" class="form-control"></select>
+          <label>等级</label>
+          <select id="correct-grade" class="form-control">
+            <option value="">不修改</option>
+            <option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option>
+          </select>
+          <label>备注</label>
+          <textarea id="correct-reason" class="form-control" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary">保存纠正</button>
+        </form>
+      </div>
+      <div class="action-content" id="tab-anchor" style="display:none">
+        <form id="anchor-form">
+          <label>锚点类型</label>
+          <select id="anchor-type" class="form-control">
+            <option value="positive">正例</option>
+            <option value="hard">困难例</option>
+            <option value="boundary">边界例</option>
+            <option value="negative">反例</option>
+          </select>
+          <label>目标缺陷代码</label>
+          <select id="anchor-code" class="form-control"></select>
+          <label>备注</label>
+          <textarea id="anchor-note" class="form-control" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary">保存锚点</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 视频帧抽屉 -->
+<div class="drawer" id="frame-drawer" style="display:none">
+  <div class="drawer-hd">
+    <h3>视频帧</h3>
+    <button class="btn btn-sm" id="btn-import-frames">导入选中帧为样本</button>
+    <button class="btn btn-sm" id="btn-close-drawer">关闭</button>
+  </div>
+  <div class="drawer-body" id="frame-list"></div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/workspace.js"></script>
+{% endblock %}

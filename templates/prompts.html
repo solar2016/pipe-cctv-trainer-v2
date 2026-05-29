@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Prompt 管理 - Pipe CCTV Trainer{% endblock %}
+{% block content %}
+<div class="page-container">
+  <div class="page-hd">
+    <h2>Prompt 版本管理</h2>
+  </div>
+
+  <!-- 当前活跃 Prompt -->
+  <div id="active-prompt" style="margin-bottom:24px"></div>
+
+  <!-- 版本列表 -->
+  <div>
+    <h3 style="margin-bottom:12px">版本历史</h3>
+    <div id="prompt-list"></div>
+  </div>
+
+  <!-- 变更记录 -->
+  <div style="margin-top:24px">
+    <h3 style="margin-bottom:12px">优化变更记录</h3>
+    <div id="change-logs"></div>
+  </div>
+
+  <!-- Diff 对比 -->
+  <div id="diff-section" style="display:none;margin-top:24px">
+    <h3 style="margin-bottom:12px">版本对比</h3>
+    <div id="diff-result"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/prompts.js"></script>
+{% endblock %}

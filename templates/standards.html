@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}标准管理 - Pipe CCTV Trainer{% endblock %}
+{% block content %}
+<div class="page-container">
+  <div class="page-hd">
+    <h2>缺陷标准管理</h2>
+    <button class="btn btn-primary" id="btn-upload-standard">+ 上传标准文档</button>
+    <input type="file" id="standard-file-input" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.bmp" hidden>
+  </div>
+
+  <div class="active-standard" id="active-standard">
+    <h3>当前激活标准</h3>
+    <div id="active-standard-info">未激活任何标准</div>
+  </div>
+
+  <div class="standard-list" id="standard-list"></div>
+
+  <!-- 标准详情弹窗 -->
+  <div class="modal" id="standard-modal" style="display:none">
+    <div class="modal-content">
+      <div class="modal-hd">
+        <h3 id="modal-title">标准详情</h3>
+        <button class="btn btn-sm" id="btn-close-modal">关闭</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/standards.js"></script>
+{% endblock %}

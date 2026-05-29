@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}设置 - Pipe CCTV Trainer{% endblock %}
+{% block content %}
+<div class="page-container">
+  <div class="page-hd">
+    <h2>系统设置</h2>
+  </div>
+  <form id="settings-form" class="settings-form">
+    <div class="form-group">
+      <label>API Base URL</label>
+      <input type="text" id="set-api-base" class="form-control" placeholder="https://api.openai.com/v1">
+    </div>
+    <div class="form-group">
+      <label>API Key</label>
+      <input type="password" id="set-api-key" class="form-control" placeholder="sk-...">
+    </div>
+    <div class="form-group">
+      <label>模型</label>
+      <input type="text" id="set-model" class="form-control" placeholder="gpt-4o-mini">
+    </div>
+    <div class="form-group">
+      <label>视频模型</label>
+      <input type="text" id="set-video-model" class="form-control" placeholder="可选，留空则使用主模型">
+    </div>
+    <div class="form-group">
+      <label>Temperature</label>
+      <input type="number" id="set-temperature" class="form-control" step="0.1" min="0" max="2">
+    </div>
+    <div class="form-group">
+      <label>Few-shot 最大数量</label>
+      <input type="number" id="set-fewshot-max" class="form-control" min="0" max="20">
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">保存</button>
+      <button type="button" class="btn" id="btn-reset">恢复默认</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/settings.js"></script>
+{% endblock %}

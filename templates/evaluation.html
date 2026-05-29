@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}评测报告 - Pipe CCTV Trainer{% endblock %}
+{% block content %}
+<div class="page-container">
+  <div class="page-hd">
+    <h2>评测报告</h2>
+    <button class="btn btn-primary" id="btn-run-eval">运行评测</button>
+    <button class="btn" id="btn-generate-report">生成报告</button>
+    <button class="btn" id="btn-run-agent">Agent 分析</button>
+    <button class="btn" id="btn-show-priorities">优先级分析</button>
+    <button class="btn btn-primary" id="btn-optimize" style="background:var(--success)">定向优化</button>
+    <button class="btn" id="btn-apply-prompt">应用到 Prompt</button>
+    <button class="btn btn-danger" id="btn-regression">回归验证</button>
+  </div>
+
+  <!-- 评测统计 -->
+  <div class="eval-summary" id="eval-summary" style="display:none">
+    <div class="stat-card"><div class="stat-value" id="stat-total">0</div><div class="stat-label">总样本</div></div>
+    <div class="stat-card"><div class="stat-value" id="stat-accuracy">0%</div><div class="stat-label">类型准确率</div></div>
+    <div class="stat-card"><div class="stat-value" id="stat-grade">0%</div><div class="stat-label">等级准确率</div></div>
+    <div class="stat-card"><div class="stat-value" id="stat-unknown">0%</div><div class="stat-label">UNKNOWN率</div></div>
+  </div>
+
+  <!-- 报告摘要 -->
+  <div id="report-summary" style="display:none">
+    <div class="active-standard">
+      <h3>报告摘要</h3>
+      <pre id="report-text" style="white-space:pre-wrap;font-size:13px;margin-top:8px"></pre>
+    </div>
+  </div>
+
+  <!-- 混淆矩阵 -->
+  <div id="confusion-section" style="display:none">
+    <h3 style="margin:16px 0 8px">混淆矩阵</h3>
+    <div id="confusion-matrix"></div>
+  </div>
+
+  <!-- 各类别指标 -->
+  <div id="metrics-section" style="display:none">
+    <h3 style="margin:16px 0 8px">各类别指标</h3>
+    <div id="per-code-stats"></div>
+  </div>
+
+  <!-- Agent 分析结果 -->
+  <div id="agent-section" style="display:none">
+    <h3 style="margin:16px 0 8px">Agent 分析</h3>
+    <div id="agent-results"></div>
+  </div>
+
+  <!-- 优先级分析 -->
+  <div id="priority-section" style="display:none">
+    <h3 style="margin:16px 0 8px">优化优先级（大模型分析）</h3>
+    <div id="priority-results"></div>
+  </div>
+
+  <!-- 优化结果 -->
+  <div id="optimize-section" style="display:none">
+    <h3 style="margin:16px 0 8px">定向优化结果</h3>
+    <div id="optimize-results"></div>
+  </div>
+
+  <!-- 回归验证 -->
+  <div id="regression-section" style="display:none">
+    <h3 style="margin:16px 0 8px">回归验证</h3>
+    <div id="regression-results"></div>
+  </div>
+
+  <!-- 历史评测 -->
+  <div class="eval-history" id="eval-history">
+    <h3 style="margin:16px 0 8px">历史报告</h3>
+    <div id="report-list"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/evaluation.js?v=2"></script>
+{% endblock %}

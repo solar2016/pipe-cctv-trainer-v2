@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}管道 CCTV 缺陷训练平台{% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/main.css?v=2">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <nav class="topbar">
+    <span class="logo">Pipe CCTV Trainer</span>
+    <span class="divider"></span>
+    <a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">工作台</a>
+    <a href="/standards" class="nav-link {% if request.path == '/standards' %}active{% endif %}">标准管理</a>
+    <a href="/prompts" class="nav-link {% if request.path == '/prompts' %}active{% endif %}">Prompt</a>
+    <a href="/evaluation" class="nav-link {% if request.path == '/evaluation' %}active{% endif %}">评测报告</a>
+    <a href="/settings" class="nav-link {% if request.path == '/settings' %}active{% endif %}">设置</a>
+    <span class="spacer"></span>
+    <span class="stat" id="health-status"></span>
+  </nav>
+  <main class="content">
+    {% block content %}{% endblock %}
+  </main>
+  <script src="/static/js/app.js?v=2"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
