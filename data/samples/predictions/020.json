@@ -1,0 +1,51 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.9,
+      "bbox": [
+        0.2,
+        0.38,
+        0.52,
+        0.81
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.45,
+      "defect_ratio_desc": "变形缺陷导致管腔截面积萎缩约45%",
+      "defect_continuity": "连续",
+      "position_detail": "管中偏左上方",
+      "visible_features": [
+        "管壁向内塌陷",
+        "截面失圆扁平"
+      ],
+      "recommendation": "建议进行管道开挖修复或非开挖内衬修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该HDPE管道段在检测中发现严重变形缺陷，管壁向内塌陷导致截面严重失圆扁平，过水能力大打折扣，建议及时安排修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径 150",
+    "光照水位": "光照偏暗且有雾气干扰，低水位",
+    "整体轮廓": "管道截面严重失圆，管顶向下塌陷，截面呈扁平状，管腔严重受压变窄",
+    "管底形态": "管底未见明显堆积物",
+    "管壁表面": "管壁受压向内凹陷，材料未见明显破裂但形状严重改变",
+    "接口位置": "接口处未见明显异常",
+    "异常细节": "红色箭头指向处管壁发生大面积向内塌陷变形，过水断面严重萎缩"
+  },
+  "scan_findings": [
+    {
+      "position": "管中至管顶",
+      "description": "管壁向内凹陷变形，截面扁平化",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

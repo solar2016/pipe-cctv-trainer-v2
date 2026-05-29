@@ -1,0 +1,60 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.32,
+        0.62,
+        0.68,
+        0.82
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "变形高度约占管径的10%-12%",
+      "defect_continuity": "孤立",
+      "position_detail": "管底",
+      "visible_features": [
+        "管底波纹管内壁向上隆起",
+        "管道截面失圆",
+        "局部内凹"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D:2.97m处存在明显的管底变形（BX），表现为HDPE双壁波纹管底部受外力挤压向上隆起，导致管道截面失圆，变形量估算在5%-15%之间（2级）。建议根据实际工况采取局部固化或开挖修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径300mm",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面失圆，管底向上凹陷变形",
+    "管底形态": "管底局部向上隆起，波纹结构变形，有少量积水和附着物",
+    "管壁表面": "管底隆起部位表面尚完整，但轮廓明显向内凸起",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "红色箭头指向的管底区域，波纹管发生明显的局部向内变形，导致过流断面受损"
+  },
+  "scan_findings": [
+    {
+      "position": "管底",
+      "description": "管底波纹管向上隆起、局部内凹变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 2,
+    "from_confidence": 0.85,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "图像中HDPE管道底部有极其明显的扁平化及内凹变形，截面严重失圆，特征非常典型且清晰，足以支持变形（BX）的诊断。"
+  }
+}

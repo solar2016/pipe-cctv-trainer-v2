@@ -1,0 +1,35 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头指向区域位于管底，但画面浑浊、模糊且被水体遮挡，无法清楚确认是否存在连续、低位、平缓的泥沙/淤泥沉积层；当前CJ证据不足，需人工复核。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头指向区域位于管底，但画面浑浊、模糊且被水体遮挡，无法清楚确认是否存在连续、低位、平缓的泥沙/淤泥沉积层；当前CJ证据不足，需人工复核。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 3,
+    "confidence": 0.68
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "CJ",
+    "from_grade": 3,
+    "from_confidence": 0.74,
+    "candidate_codes": [
+      "CJ",
+      "UNKNOWN"
+    ],
+    "reason": "箭头指向区域位于管底，但画面浑浊、模糊且被水体遮挡，无法清楚确认是否存在连续、低位、平缓的泥沙/淤泥沉积层；当前CJ证据不足，需人工复核。"
+  }
+}

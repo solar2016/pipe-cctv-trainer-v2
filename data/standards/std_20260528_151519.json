@@ -1,0 +1,64 @@
+{
+  "id": "std_20260528_151519",
+  "name": "民星路基地雨污水管道检测",
+  "source_file": "微信图片_20260528151253_96_80.jpg",
+  "uploaded_at": "2026-05-28T15:15:34",
+  "status": "parsed",
+  "defects": [
+    {
+      "code": "QR",
+      "name": "异物侵入",
+      "category": "结构性缺陷",
+      "definition": "非管道系统附属设施的物体穿透管壁进入管内。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "异物在管道内水平中心线的上方，且占用过水断面小于 10%。",
+          "score": 1
+        },
+        "2": {
+          "description": "异物在管道内水平中心线的上方，且占用过水断面为 10%~20%或异物在管道内水平中心线下方，且占用过水断面小于 10%。",
+          "score": 3
+        },
+        "3": {
+          "description": "支管进入主管内的长度大于主管直径大于 20%；或者异物在管道内水平中心线的上方，且占用过水断面大于 20%或异物在管道内水平中心线下方，且占用过水断面为 10%~20%。",
+          "score": 6
+        },
+        "4": {
+          "description": "支管未接入到主管；或者异物在管道内水平中心线的下方，且占用过水断面大于 20%。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "SL",
+      "name": "渗漏",
+      "category": "结构性缺陷",
+      "definition": "管道外的水流入管道或是管道内的水漏出管外。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "滴漏: 水持续从缺陷点滴出，沿管壁流动。",
+          "score": 1
+        },
+        "2": {
+          "description": "线漏:水持续从缺陷点流出，并脱离管壁流动。",
+          "score": 3
+        },
+        "3": {
+          "description": "涌漏:水从缺陷点涌出或大量喷出,涌漏水面的面积小于管道断面的 1/3。",
+          "score": 6
+        },
+        "4": {
+          "description": "涌漏:水从缺陷点涌出或大量喷出,涌漏水面的面积大于管道断面的 1/3。",
+          "score": 10
+        }
+      }
+    }
+  ],
+  "evaluation_formulas": null,
+  "evaluation_params": null,
+  "distance_rules": null
+}

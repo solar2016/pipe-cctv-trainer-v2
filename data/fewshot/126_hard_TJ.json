@@ -1,0 +1,6 @@
+{
+  "sample_id": "126",
+  "anchor_type": "hard",
+  "target_code": "TJ",
+  "note": "AI误判为UNKNOWN（置信度40%），需重点学习"
+}

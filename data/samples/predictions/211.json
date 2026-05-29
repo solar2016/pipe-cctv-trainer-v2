@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 3,
+      "confidence": 0.9,
+      "reasoning": "Continuous sediment accumulation is clearly visible at the bottom of the pipe. Based on the ratio of the sediment height to the pipe diameter, it occupies approximately 30% of the cross-section, falling within the 20% to 40% range defined for Grade 3 Sedimentation (CJ).",
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material_and_diameter": "HDPE material, nominal diameter 200mm as indicated by the overlay text.",
+    "lighting_and_water": "Poor lighting and high turbidity/blurriness in the foreground. Water and sediment level is high at the bottom of the pipe.",
+    "overall_profile": "The pipe maintains its circular shape in the visible background portion, but the lower half is obscured by accumulation.",
+    "pipe_bottom": "Continuous and thick accumulation of silt/sediment along the bottom of the pipe.",
+    "pipe_wall": "The upper pipe wall appears intact with no clear signs of fracture or deformation, though visibility is limited by camera focus and distance.",
+    "joints": "No obvious joint displacement or material protrusion is visible in the clear section.",
+    "abnormal_details": "Silt and sandy deposits have accumulated continuously along the bottom of the pipe. The depth of the sediment is estimated to be between 20% and 40% of the pipe diameter (approximately 30%)."
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 3,
+    "confidence": 0.85
+  }
+}

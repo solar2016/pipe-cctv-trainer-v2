@@ -1,0 +1,32 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 4,
+      "confidence": 0.95,
+      "description": "管底淤泥连续沉积，厚度明显大于管径的40%，属于4级沉积缺陷。",
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material": "HDPE (高密度聚乙烯波纹管)",
+    "diameter": 200,
+    "light_and_water": "光照集中在管道中部，底部无明显流动水流，积水已被厚重的泥沙吸附呈湿泥状",
+    "outline": "管道上半部轮廓基本保持圆形，但下半部完全被沉积物覆盖",
+    "bottom_state": "管底堆积有大范围连续且平整的黄色淤泥与砂土",
+    "wall_state": "右侧可见波纹管的环向肋条，管壁未见明显破裂或变形迹象",
+    "joint_state": "接口部分被泥沙掩埋，无法清晰辨识",
+    "abnormal_details": "泥沙淤积高度极高，目测已占管道高度的50%以上，严重压缩了过水断面"
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 4,
+    "confidence": 0.95
+  }
+}

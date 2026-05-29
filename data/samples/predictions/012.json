@@ -1,0 +1,24 @@
+{
+  "defects": [
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 3,
+      "confidence": 0.68,
+      "visible_features": [
+        "红色箭头指向区域可见灰白色不规则附着物",
+        "管壁及管底存在较大范围硬质或软质附着物",
+        "附着物造成明显过水断面损失"
+      ],
+      "recommendation": "清洗或疏通处理",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示管内壁及管底存在明显灰白色、黑褐色不规则附着物，红色箭头指向区域疑似结垢或附着堆积，已造成一定过水断面损失。管底同时可见杂质淤积，但形态较不规则，主判为结垢。建议清洗疏通并由人工结合视频连续段复核缺陷范围和等级。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 2, 'confidence': 0.45, 'visible_features': ['管底可见杂质和淤积物堆积，但局部呈块状、不够平缓连续'], 'recommendation': '疏通处理'}"
+  ],
+  "review_stage": "first_pass"
+}

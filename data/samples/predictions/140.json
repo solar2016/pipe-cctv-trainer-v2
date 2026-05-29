@@ -1,0 +1,77 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.38,
+        0.08,
+        0.63,
+        0.22
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "缺陷约占管顶区域的15%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶中部",
+      "visible_features": [
+        "管顶内壁破裂，波纹管内层材料断开，有明显撕裂缝隙"
+      ],
+      "recommendation": "进行局部非开挖修复或局部换管",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "ZA",
+      "name": "障碍物",
+      "grade": 3,
+      "confidence": 0.95,
+      "bbox": [
+        0.02,
+        0.38,
+        0.88,
+        0.98
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.5,
+      "defect_ratio_desc": "障碍物占据管底约50%的垂直投影空间",
+      "defect_continuity": "连续",
+      "position_detail": "管底及两侧",
+      "visible_features": [
+        "堆积物有明确边界，呈硬质、有棱角状态，可见红砖和混凝土碎块"
+      ],
+      "recommendation": "进行管道疏通，清除硬质障碍物",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示管顶存在明显的破裂（PL）缺陷，内壁材料断开并伴有局部变形；管底堆积大量红砖、混凝土碎块等硬质障碍物（ZA），严重阻碍排水，建议尽快安排管道疏通并对管顶破损处进行修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE双壁波纹管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管顶发生局部变形和内壁破裂，截面失圆",
+    "管底形态": "管底堆积有大量大块硬质红砖、石块、混凝土碎块等障碍物",
+    "管壁表面": "管顶内壁材料断开，出现明显的破裂和撕裂缝隙",
+    "接口位置": "未见明显异常",
+    "异常细节": "管顶11点至1点钟方向内壁结构破裂，材料不连续；管底堆积大量建筑垃圾类硬质障碍物，严重占据管腔空间"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶",
+      "description": "内壁破裂撕裂",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管底",
+      "description": "大量硬质红砖及石块堆积",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

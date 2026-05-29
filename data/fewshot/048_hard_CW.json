@@ -1,0 +1,6 @@
+{
+  "sample_id": "048",
+  "anchor_type": "hard",
+  "target_code": "CW",
+  "note": "AI误判为NONE（置信度78%），需重点学习"
+}

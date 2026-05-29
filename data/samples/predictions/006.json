@@ -1,0 +1,38 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 2,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向接口位置",
+        "接口处可见管口边缘错台",
+        "相邻管段中心线存在不连续迹象"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "ZA",
+      "name": "障碍物",
+      "grade": 2,
+      "confidence": 0.58,
+      "visible_features": [
+        "管底可见块状异物或硬质堆积物",
+        "局部占用过水断面"
+      ],
+      "recommendation": "特殊疏通处理",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示红色箭头所指接口处存在明显错台，疑似同一接口两管口发生横向偏离，初判为错位缺陷，程度约为中度。管底同时可见块状异物或硬质堆积物，占用部分过水断面，建议清理并结合现场复核确认。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管底存在泥水及块状杂物，可能影响过流",
+    "图像局部反光和污物附着，对缺陷边界判断有一定影响"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

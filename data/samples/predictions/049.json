@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 2,
+      "confidence": 0.8,
+      "bbox": [
+        0.75,
+        0.35,
+        0.87,
+        0.65
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.1,
+      "defect_ratio_desc": "缺陷错位部分约占接口区域的10%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧接口",
+      "visible_features": [
+        "接口处管口横向偏离",
+        "形成明显错台"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在14.85m处进行检测，图像显示右侧接口处存在明显的错位现象。前段管口与后段管口中心线不连续，向右侧横向偏离，形成错台，错位距离约为管壁厚度的1/2至1倍之间，判定为中度错位（CW，2级）。由于管道内雾气较重，建议结合后续复测确认接口密封情况。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照但伴有雾气，低水位",
+    "整体轮廓": "截面基本呈圆形，但右侧接口处管壁轮廓不连续",
+    "管底形态": "管底有流水，未见明显异常堆积",
+    "管壁表面": "管壁表面有水雾遮挡，可见环向条纹",
+    "接口位置": "右侧接口处存在明显的横向偏差，两端管口未对齐",
+    "异常细节": "红色箭头指向的右侧接口处，前段管口向右侧偏离，与后段管口产生明显的错台和台阶"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧接口",
+      "description": "管口横向偏离形成错台",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

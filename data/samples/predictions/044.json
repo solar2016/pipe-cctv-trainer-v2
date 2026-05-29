@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头处可见细长条状物贴近管壁，但画面较模糊且有泥沙/附着物混杂，未能清楚看到分叉、须状或团簇状根系特征，存在树根与障碍物/沉积混淆，当前 SG 证据不足，建议人工复核。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头处可见细长条状物贴近管壁，但画面较模糊且有泥沙/附着物混杂，未能清楚看到分叉、须状或团簇状根系特征，存在树根与障碍物/沉积混淆，当前 SG 证据不足，建议人工复核。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 3,
+    "confidence": 0.78
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "SG",
+    "from_grade": 2,
+    "from_confidence": 0.66,
+    "candidate_codes": [
+      "SG",
+      "ZA",
+      "CJ"
+    ],
+    "reason": "箭头处可见细长条状物贴近管壁，但画面较模糊且有泥沙/附着物混杂，未能清楚看到分叉、须状或团簇状根系特征，存在树根与障碍物/沉积混淆，当前 SG 证据不足，建议人工复核。"
+  }
+}

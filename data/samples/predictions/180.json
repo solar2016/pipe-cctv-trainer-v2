@@ -1,0 +1,51 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.56,
+        0.15,
+        0.72,
+        0.35
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.08,
+      "defect_ratio_desc": "缺陷约占管壁可见区域的8%",
+      "defect_continuity": "孤立",
+      "position_detail": "右上方",
+      "visible_features": [
+        "管壁材料断裂",
+        "有明显的裂口和破碎边缘"
+      ],
+      "recommendation": "建议进行局部修复或持续监测",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D:7.65m处进行检测，图像显示右上方管壁出现局部破裂（PL），管壁材料不连续并伴有裂口，评定为2级破裂，建议及时安排局部修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面基本呈圆形，整体轮廓尚完整",
+    "管底形态": "管底有少量水流，无明显大面积沉积",
+    "管壁表面": "管壁右上方（约1点钟至2点钟方向）有明显的破损、开裂迹象，有红色箭头指示",
+    "接口位置": "接口处未见明显脱节或错位",
+    "异常细节": "右上方管壁局部破裂，材料出现断裂与不连续，边缘呈不规则碎裂状"
+  },
+  "scan_findings": [
+    {
+      "position": "右上方管壁",
+      "description": "管壁材料破损开裂，局部不连续",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

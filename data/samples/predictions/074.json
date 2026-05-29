@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.74,
+      "visible_features": [
+        "红色箭头指向管壁上部可见局部裂口或开口状破损",
+        "缺陷处呈黑色间隙，管壁连续性中断",
+        "局部管壁边缘不规则，疑似破裂形成的裂口"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示，红色箭头指向的管壁上部区域存在局部开口状破损，管壁连续性中断，符合破裂类缺陷特征。当前可见管道整体形状未见明显大范围坍塌或严重变形，初判为PL破裂2级。建议结合现场视频连续帧进一步复核缺陷范围和深度。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管底可见少量杂物或沉积痕迹，但断面占用较小，证据不足以单独判定功能性缺陷"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

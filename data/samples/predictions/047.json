@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 1,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.78,
+        0.65,
+        0.95
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "错台区域占管径截面边缘约12%",
+      "defect_continuity": "孤立",
+      "position_detail": "底部接口偏左侧",
+      "visible_features": [
+        "接口处管壁轮廓线错开",
+        "可见明显的台阶状边缘"
+      ],
+      "recommendation": "进行局部现场固化法修复或定期跟踪检测",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "低",
+  "report_text": "检测图像显示，该HDPE管道在局部接口处（约2.71m位置）存在1级错位缺陷，表现为管口中心线不连续并产生轻微错台。该缺陷目前对过水能力影响较小，建议纳入日常维护监控或视需要进行局部修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，无明显积水",
+    "整体轮廓": "截面基本呈圆形，管壁平整",
+    "管底形态": "管底未见明显沉积或障碍物",
+    "管壁表面": "管壁表面光滑，无明显破裂或结垢",
+    "接口位置": "底部接口处存在明显的径向偏差，管口中心线不连续",
+    "异常细节": "在红箭头指示的管道底部接口位置，前后两节管口未能平顺对接，形成明显的错台台阶，属于典型的错位表现。"
+  },
+  "scan_findings": [
+    {
+      "position": "管道底部接口处",
+      "description": "接口对齐不齐，存在错台现象",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

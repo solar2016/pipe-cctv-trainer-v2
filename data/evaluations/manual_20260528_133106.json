@@ -1,0 +1,133 @@
+{
+  "id": "manual_20260528_133106",
+  "label": "manual",
+  "timestamp": "2026-05-28T13:31:06",
+  "result": {
+    "total": 195,
+    "code_hits": 112,
+    "grade_hits": 63,
+    "unknowns": 36,
+    "code_accuracy": 0.5744,
+    "grade_accuracy": 0.3231,
+    "grade_within_one_accuracy": 0.7487,
+    "unknown_rate": 0.1846,
+    "per_code": {
+      "CW": {
+        "total": 13,
+        "hits": 8,
+        "accuracy": 0.6154,
+        "unknowns": 2
+      },
+      "ZA": {
+        "total": 48,
+        "hits": 23,
+        "accuracy": 0.4792,
+        "unknowns": 5
+      },
+      "SG": {
+        "total": 14,
+        "hits": 10,
+        "accuracy": 0.7143,
+        "unknowns": 1
+      },
+      "PL": {
+        "total": 43,
+        "hits": 33,
+        "accuracy": 0.7674,
+        "unknowns": 4
+      },
+      "BX": {
+        "total": 43,
+        "hits": 15,
+        "accuracy": 0.3488,
+        "unknowns": 20
+      },
+      "CJ": {
+        "total": 24,
+        "hits": 18,
+        "accuracy": 0.75,
+        "unknowns": 2
+      },
+      "TJ": {
+        "total": 4,
+        "hits": 1,
+        "accuracy": 0.25,
+        "unknowns": 2
+      },
+      "JG": {
+        "total": 1,
+        "hits": 1,
+        "accuracy": 1.0,
+        "unknowns": 0
+      },
+      "QF": {
+        "total": 1,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 0
+      },
+      "AJ": {
+        "total": 4,
+        "hits": 3,
+        "accuracy": 0.75,
+        "unknowns": 0
+      }
+    },
+    "confusion": {
+      "CW": {
+        "NONE": 2,
+        "CW": 8,
+        "JG": 1,
+        "UNKNOWN": 2
+      },
+      "ZA": {
+        "CJ": 14,
+        "JG": 4,
+        "UNKNOWN": 5,
+        "ZA": 23,
+        "FZ": 2
+      },
+      "SG": {
+        "SG": 10,
+        "CJ": 2,
+        "UNKNOWN": 1,
+        "SL": 1
+      },
+      "PL": {
+        "UNKNOWN": 4,
+        "PL": 33,
+        "SG": 2,
+        "JK": 1,
+        "JG": 1,
+        "AJ": 2
+      },
+      "BX": {
+        "BX": 15,
+        "UNKNOWN": 20,
+        "TJ": 1,
+        "PL": 5,
+        "AJ": 2
+      },
+      "CJ": {
+        "CJ": 18,
+        "ZA": 4,
+        "UNKNOWN": 2
+      },
+      "TJ": {
+        "ZA": 1,
+        "TJ": 1,
+        "UNKNOWN": 2
+      },
+      "JG": {
+        "JG": 1
+      },
+      "QF": {
+        "FZ": 1
+      },
+      "AJ": {
+        "AJ": 3,
+        "ZA": 1
+      }
+    }
+  }
+}

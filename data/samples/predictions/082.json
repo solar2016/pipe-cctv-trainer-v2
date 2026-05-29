@@ -1,0 +1,75 @@
+{
+  "defects": [
+    {
+      "code": "SL",
+      "name": "渗漏",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.23,
+        0.09,
+        0.3,
+        0.64
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.1,
+      "defect_ratio_desc": "渗漏水流垂直跨越了约55%的画面高度",
+      "defect_continuity": "孤立",
+      "position_detail": "10点钟方向接口处",
+      "visible_features": [
+        "亮白色水流从管顶缝隙流下，呈线状，脱离管壁"
+      ],
+      "recommendation": "局部现场固化法修复",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "grade": 2,
+      "confidence": 0.8,
+      "bbox": [
+        0.0,
+        0.45,
+        0.65,
+        0.83
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "沉积物主要分布在管底两侧，占管底宽度的约15%",
+      "defect_continuity": "连续",
+      "position_detail": "管底两侧",
+      "visible_features": [
+        "管底两侧有连续的泥沙、碎石等沉积物"
+      ],
+      "recommendation": "高压冲洗清淤",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在10点钟方向接口处存在明显的线漏（渗漏SL，2级），表现为亮白色水流持续流下并脱离管壁；此外，管底两侧存在明显的泥沙和碎石沉积（沉积CJ，2级）。建议对渗漏点进行局部修复，并对管道进行高压冲洗清淤。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，约 DN300",
+    "光照水位": "正常光照，低水位，管底有积水",
+    "整体轮廓": "截面基本呈圆形，波纹管壁轮廓清晰",
+    "管底形态": "管底两侧有明显的泥沙和碎石连续堆积，中间形成排水通道",
+    "管壁表面": "管壁上方及右侧未见明显破裂，但左侧偏上区域存在异常",
+    "接口位置": "10点钟方向的环向接口/缝隙处有明显的介质流出",
+    "异常细节": "10点钟方向接口处有一股亮白色的线状水流（线漏）持续流下，脱离管壁直达管底积水；同时，管底两侧伴有较明显的泥沙沉积"
+  },
+  "scan_findings": [
+    {
+      "position": "10点钟方向管壁",
+      "description": "亮白色线状下垂物，疑似线漏",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管底两侧",
+      "description": "泥沙及碎石堆积，疑似沉积",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

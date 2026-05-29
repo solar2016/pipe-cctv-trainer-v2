@@ -1,0 +1,78 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.92,
+      "bbox": [
+        0.13,
+        0.25,
+        0.88,
+        0.84
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.45,
+      "defect_ratio_desc": "变形区域约占管道断面的45%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶及右侧",
+      "visible_features": [
+        "管壁向内塌陷",
+        "截面严重失圆"
+      ],
+      "recommendation": "建议进行结构性修复或局部开挖更换",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.26,
+        0.72,
+        0.35
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "接口脱开长度约占管周的15%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶接口处",
+      "visible_features": [
+        "接口处两节管端纵向分离",
+        "有明显间隙"
+      ],
+      "recommendation": "结合变形缺陷统一进行修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段在检测过程中发现严重的结构性缺陷。管顶及右侧管壁（HDPE材质）发生严重向内塌陷变形（BX，3级），导致管道截面严重失圆，过水能力受阻；同时，在变形位置的接口处伴有明显的管端纵向脱节（TJ，2级）。建议尽快安排结构性修复或开挖更换该段管道。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN500",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管顶及右侧管壁存在严重向内塌陷变形，截面明显失圆",
+    "管底形态": "管底平整，未见明显沉积物",
+    "管壁表面": "管壁局部有磨损和污渍，右侧及顶部管壁大面积向内凹陷，材质呈层状变形",
+    "接口位置": "红色箭头指向的接口处存在明显的纵向脱开及管壁变形",
+    "异常细节": "管顶及右侧管壁严重向下、向内塌陷，导致管道过水断面受压变小，且接口处管壁出现脱开与破损特征"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶及右侧管壁",
+      "description": "管壁向内严重塌陷变形",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管顶接口处",
+      "description": "接口纵向脱开",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描"
+}

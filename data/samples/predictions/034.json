@@ -1,0 +1,35 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头指向区域被水流和水花遮挡，局部模糊；可见底部有疑似块状杂物/淤积混合物，但难以确认是独立障碍物还是连续沉积，ZA证据不足，建议人工复核。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头指向区域被水流和水花遮挡，局部模糊；可见底部有疑似块状杂物/淤积混合物，但难以确认是独立障碍物还是连续沉积，ZA证据不足，建议人工复核。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 3,
+    "confidence": 0.82
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "ZA",
+    "from_grade": 3,
+    "from_confidence": 0.78,
+    "candidate_codes": [
+      "ZA",
+      "CJ"
+    ],
+    "reason": "箭头指向区域被水流和水花遮挡，局部模糊；可见底部有疑似块状杂物/淤积混合物，但难以确认是独立障碍物还是连续沉积，ZA证据不足，建议人工复核。"
+  }
+}

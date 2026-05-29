@@ -1,0 +1,86 @@
+{
+  "defects": [
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.0,
+        0.8,
+        0.5
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.2,
+      "defect_ratio_desc": "结垢物约占管顶及侧壁断面的20%",
+      "defect_continuity": "连续",
+      "position_detail": "管顶及上部侧壁",
+      "visible_features": [
+        "黑色片状附着物",
+        "局部剥离悬挂"
+      ],
+      "recommendation": "建议采用高压水射流进行清洗",
+      "category": "功能性缺陷"
+    },
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "grade": 2,
+      "confidence": 0.8,
+      "bbox": [
+        0.38,
+        0.52,
+        0.72,
+        0.95
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "沉积和积水高度约占管径的20%",
+      "defect_continuity": "连续",
+      "position_detail": "管底",
+      "visible_features": [
+        "管底积水",
+        "水质浑浊有泥沙沉积"
+      ],
+      "recommendation": "建议结合清洗进行疏通",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该HDPE管段（DN200）检测图像显示，管顶及上部管壁存在较严重的结垢（JG，2级），呈黑色片状附着，部分已剥离悬挂，对过水断面造成约20%的损失。同时，管底存在明显的积水与泥沙沉积（CJ，2级），水位高度约占管径的20%~30%。建议对该管段进行高压冲洗与疏通维护。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径200mm",
+    "光照水位": "光照正常，管底有积水，水位约占管径的20%~30%",
+    "整体轮廓": "截面基本呈圆形，但管顶及上部管壁由于附着物显得不平整",
+    "管底形态": "管底有积水，水质较浑浊，底部有连续的泥沙沉积",
+    "管壁表面": "管顶及两侧上方覆盖有大面积黑色/灰色结垢物，部分呈片状剥离或悬挂",
+    "接口位置": "未见明显接口错位或脱节",
+    "异常细节": "管顶及拱顶区域结垢严重，呈黑色片状附着，部分剥离悬挂，导致过水断面有一定损失；管底存在连续积水与沉积"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶及上部管壁",
+      "description": "大面积黑色片状结垢附着物",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管底",
+      "description": "积水及泥沙沉积",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "unknown_route": {
+    "routed": false,
+    "from_code": "JG",
+    "from_grade": 2,
+    "from_confidence": 0.85,
+    "candidate_codes": [
+      "JG"
+    ],
+    "reason": "管壁（尤其是管顶和上半部分）存在非常明显的大面积片状、块状附着物，部分已剥离垂挂，符合结垢（JG）的典型特征。由于管道材质为HDPE，不存在混凝土腐蚀露骨料的情况，因此排除了FS（腐蚀），主判断JG正确且证据充分。"
+  }
+}

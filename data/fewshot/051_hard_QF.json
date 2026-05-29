@@ -1,0 +1,6 @@
+{
+  "sample_id": "051",
+  "anchor_type": "hard",
+  "target_code": "QF",
+  "note": "AI误判为FZ（置信度68%），需重点学习"
+}

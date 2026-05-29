@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.25,
+        0.85,
+        0.75
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.2,
+      "defect_ratio_desc": "变形量约为管道直径的15%-25%",
+      "defect_continuity": "连续",
+      "position_detail": "右侧管壁",
+      "visible_features": [
+        "管体截面失圆",
+        "管壁局部内凹"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "检测图像显示，该HDPE管段右侧管壁发生明显的向内凹陷变形，导致管道截面失圆，变形等级为3级，建议采取局部固化或开挖方式进行修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管道截面失圆，右侧管壁向内凹陷，轮廓不规则",
+    "管底形态": "管底有少量水流和轻微沉积物",
+    "管壁表面": "右侧管壁向内严重隆起变形",
+    "接口位置": "接口处未见明显异常",
+    "异常细节": "管道右侧（约3点至5点钟方向）管壁向内发生连续凹陷，导致过水断面减小"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧管壁",
+      "description": "管壁向内凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

@@ -1,0 +1,30 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 2,
+      "confidence": 0.95,
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material_and_diameter": "黑色波纹管（HDPE），公称管径为200mm。",
+    "light_and_water_level": "光照充足，直射前方；管底积水较浅，主要被沉积物覆盖。",
+    "overall_profile": "管道整体截面基本保持圆形，未见明显的结构性扁平或挤压变形。",
+    "bottom_shape": "管底存在连续、平整的泥沙质沉积物，表面平缓，属于典型的沉积特征。",
+    "wall_surface": "管壁上方及两侧附着有黑色、片状的结垢或附着物，但未见明显的管道破裂或穿孔。",
+    "joint_position": "左侧可见管道与检查井的衔接处，未见明显脱节或严重错位。",
+    "anomaly_details": "管底沉积物分布均匀连续，高度约占管径的15%左右，未达到20%。"
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 2,
+    "confidence": 0.9
+  }
+}

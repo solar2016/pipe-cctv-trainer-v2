@@ -1,0 +1,77 @@
+{
+  "defects": [
+    {
+      "code": "AJ",
+      "name": "支管暗接",
+      "grade": 3,
+      "confidence": 0.9,
+      "bbox": [
+        0.92,
+        0.25,
+        0.98,
+        0.42
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.08,
+      "defect_ratio_desc": "暗接支管孔洞约占画面可用面积的8%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧2点钟方向",
+      "visible_features": [
+        "管壁被直接打孔，无规范管道连接件"
+      ],
+      "recommendation": "进行管道修复，规范支管接口",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.8,
+      "bbox": [
+        0.83,
+        0.28,
+        0.9,
+        0.46
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.05,
+      "defect_ratio_desc": "破损区域约占画面面积的5%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧暗接孔旁",
+      "visible_features": [
+        "管壁波纹被切断，结构破损破裂"
+      ],
+      "recommendation": "局部结构性修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在右侧管壁（约2点钟方向）存在一处严重的支管暗接（AJ），管壁被直接贯穿打孔且无规范连接；同时在暗接孔旁伴有管壁破损破裂（PL）现象，建议尽快安排局部结构性修复和接口规范整治。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径 300",
+    "光照水位": "正常光照，低水位，管底有少量积水",
+    "整体轮廓": "截面呈圆形，双壁波纹管结构完整，管底局部轻微变形",
+    "管底形态": "管底有少量积水和轻微泥沙沉积",
+    "管壁表面": "右侧管壁（约2点钟方向）存在一处明显的圆形人工开孔，且开孔边缘管壁存在破损和切口",
+    "接口位置": "未见明显接口脱节或错位",
+    "异常细节": "右侧管壁有两处红箭头指示：一处为贯穿管壁的圆形孔洞，未见规范的支管连接件，判定为支管暗接（AJ）；另一处在其左侧，为管壁波纹被切断破损的痕迹，判定为破裂（PL）。"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧管壁边缘",
+      "description": "贯穿管壁的圆形暗接孔洞",
+      "confidence_level": "high"
+    },
+    {
+      "position": "右侧管壁内侧",
+      "description": "管壁波纹破损切口",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

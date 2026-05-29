@@ -1,0 +1,54 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.05,
+        0.85,
+        0.45
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.3,
+      "defect_ratio_desc": "破裂及塌陷区域约占管腔截面的30%",
+      "defect_continuity": "孤立",
+      "position_detail": "管道顶部至右上侧",
+      "visible_features": [
+        "管壁破裂开裂",
+        "管体向内塌陷变形",
+        "材料不连续"
+      ],
+      "recommendation": "建议进行局部开挖修复或局部内衬修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段在D:12.61m处，顶部（12点至2点方向）存在严重的破裂（PL）与塌陷变形（BX）混合缺陷，管壁材料已断裂不连续，严重影响管道结构安全，建议及时安排修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面失圆，顶部管壁明显向内塌陷、变形",
+    "管底形态": "管底有少量积水和微量沉积，无明显障碍物",
+    "管壁表面": "管道顶部及右上侧管壁出现严重开裂和破损，材料不连续",
+    "接口位置": "非接口处，属于管身结构性破坏",
+    "异常细节": "管道顶部12点至2点方向有大面积破裂，管壁材料断裂并向下塌陷，形成明显的裂口与变形区域，有泥沙和微小杂物从裂口处渗入迹象"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶及右上侧",
+      "description": "管壁破裂、塌陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [
+    "{'code': 'BX', 'name': '变形', 'grade': 3, 'position': '管顶', 'description': '伴随破裂发生的管顶塌陷变形'}"
+  ],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

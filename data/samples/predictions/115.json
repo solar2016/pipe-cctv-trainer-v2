@@ -1,0 +1,54 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.85,
+      "bbox": [
+        0.15,
+        0.08,
+        0.92,
+        0.78
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.45,
+      "defect_ratio_desc": "破损及变形区域约占管道截面画面的45%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧至右上方管壁",
+      "visible_features": [
+        "波纹管壁断裂",
+        "管体材料撕裂不连续",
+        "结构向内塌陷"
+      ],
+      "recommendation": "建议进行局部开挖修复或整体非开挖内衬修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "检测图像显示，该HDPE波纹管道在右侧至右上方区域发生严重的结构破裂（PL），管壁材料断裂、撕裂并向内塌陷，管道结构完整性已遭严重破坏，存在塌方风险，建议尽快安排修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径300",
+    "光照水位": "正常光照，中等水位",
+    "整体轮廓": "管道截面严重变形，右上方管壁材料断裂、塌陷",
+    "管底形态": "管底有积水，未见明显沉积物",
+    "管壁表面": "右侧管壁出现严重的撕裂、断裂，波纹结构发生破损并向内垂落",
+    "接口位置": "非接口位置，为管身段破损",
+    "异常细节": "红色箭头指向的右上方区域，管壁材料已断开、破裂，形成明显的结构缺口，部分管壁剥离并脱落入管腔"
+  },
+  "scan_findings": [
+    {
+      "position": "右上方管壁",
+      "description": "管壁材料严重破裂、断裂并向内塌陷",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [
+    "{'code': 'BX', 'name': '变形', 'description': '伴随管壁破裂，管道截面出现严重的失圆和向内塌陷'}"
+  ],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

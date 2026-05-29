@@ -1,0 +1,33 @@
+{
+  "focus_dimensions": [
+    {
+      "dimension": "confusion",
+      "severity": "high",
+      "affected_codes": [
+        "ZA",
+        "CJ",
+        "BX",
+        "TJ"
+      ],
+      "evidence": "ZA（障碍物）被误判为CJ（沉积）达14次，CJ被误判为ZA达4次；同时BX（变形）被误判为TJ（脱节）达7次，TJ被误判为BX达3次。这些核心混淆对直接拉低了相关类别的F1值（TJ仅为0.133，ZA仅为0.597）。",
+      "strategy": "在Prompt中引入显式的“易混淆类别辨析”模块。针对ZA与CJ，明确定义ZA为局部外来侵入物（如树根、支管接入），而CJ为管底连续性堆积物（如泥沙、垃圾）；针对BX与TJ，明确BX为管身截面几何形状受压变形，而TJ为管段连接处的错位、分离。并为这两组混淆提供对比型的Few-Shot微调示例。",
+      "expected_impact": "大幅降低ZA→CJ和BX→TJ的误判频次，使ZA和BX的分类准确度显著提升，同时将TJ的F1值提升至0.5以上。"
+    },
+    {
+      "dimension": "low_recall",
+      "severity": "high",
+      "affected_codes": [
+        "TG",
+        "QF",
+        "ZA"
+      ],
+      "evidence": "TG（支持度5）和QF（支持度1）的召回率均为0.000，处于完全漏检状态；高频缺陷ZA（支持度48）的召回率也仅有0.479，漏检了超过半数的障碍物。",
+      "strategy": "针对TG（特构/脱胶）和QF（起伏）等低频但关键的缺陷，在Prompt中补充其典型视觉特征描述（如QF的管内积水起伏、管线弯曲特征），并各补充至少1个标准正例Few-Shot；针对ZA，增加对边缘、微小或非典型障碍物的识别指引，降低漏检率。",
+      "expected_impact": "打破TG和QF零召回的局面，同时将高频缺陷ZA的召回率从0.479提升至0.700以上，消除系统主要漏检源。"
+    }
+  ],
+  "summary": "当前应优先通过补充“ZA/CJ”和“BX/TJ”的特征辨析及Few-Shot来解决严重混淆，并针对TG、QF和ZA补充正例引导以攻克低召回率瓶颈。",
+  "skip_optimization": false,
+  "skip_reason": "",
+  "report_id": "eval_20260528_171207"
+}

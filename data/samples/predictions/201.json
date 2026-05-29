@@ -1,0 +1,60 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.88,
+      "bbox": [
+        0.31,
+        0.4,
+        0.7,
+        0.88
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "管壁内凹变形量约占管道直径的12%",
+      "defect_continuity": "孤立",
+      "position_detail": "管底偏左",
+      "visible_features": [
+        "管体截面失圆",
+        "管壁局部内凹",
+        "轮廓连续变形"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "在D:3.68m处检测到HDPE管道存在变形缺陷。图像显示管底偏左侧管壁受外力挤压向上隆起，导致截面扁平失圆，变形量约占管径的12%，判定为BX（变形）2级，建议进行局部修复或开挖处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，低水位，现场有轻微雾气",
+    "整体轮廓": "截面明显失圆，管底偏左侧管壁向内凹陷变形",
+    "管底形态": "管底局部向上隆起",
+    "管壁表面": "管壁表面未见明显破裂或结垢，但整体轮廓发生连续形变",
+    "接口位置": "未见明显接口错位或脱节",
+    "异常细节": "红色箭头指示处，管道底部管壁发生局部内凹，导致原本圆形的截面在底部扁平化并向上隆起。"
+  },
+  "scan_findings": [
+    {
+      "position": "管底偏左",
+      "description": "管壁局部向内凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 2,
+    "from_confidence": 0.88,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "图像清晰显示HDPE管道截面发生明显的局部内凹和扁化变形，管体失圆特征极其显著，完全符合变形（BX）的定义，证据充分。"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "auto_opt_20260529_081756",
+  "base_version": "auto_1779946014",
+  "timestamp": "2026-05-29T08:17:56.453500",
+  "dimensions": [
+    "confusion",
+    "low_recall"
+  ],
+  "additions": [
+    "- 区分 ZA 和 CJ：重点观察特征差异\n- 区分 BX 和 TJ：重点观察特征差异\n- 区分 ZA 和 JG：重点观察特征差异\n- 区分 ZA 和 UNKNOWN：重点观察特征差异\n- 区分 CJ 和 ZA：重点观察特征差异"
+  ],
+  "fewshot_count": 15,
+  "prompt_length": 693
+}

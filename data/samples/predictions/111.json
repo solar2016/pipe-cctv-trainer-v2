@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 4,
+      "confidence": 0.88,
+      "bbox": [
+        0.15,
+        0.1,
+        0.9,
+        0.85
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.7,
+      "defect_ratio_desc": "破裂和坍塌区域占画面约70%",
+      "defect_continuity": "连续",
+      "position_detail": "管道中部，环向大范围",
+      "visible_features": [
+        "管壁断裂缺失",
+        "暴露出外部砖砌结构",
+        "断口边缘破损撕裂"
+      ],
+      "recommendation": "建议立即进行开挖修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段HDPE管壁发生严重破裂并坍塌（PL 4级），管体在中间位置大面积断裂缺失，环向范围大于60°，已完全暴露出外部的砖砌结构，并有泥土和碎石挤入，管道结构性功能丧失，建议立即进行开挖修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，标注管径300",
+    "光照水位": "光照正常，管底有积水",
+    "整体轮廓": "管道截面完全丧失完整性，管体大范围断裂、缺失",
+    "管底形态": "管底有积水，并可见坍塌的砖石和泥土",
+    "管壁表面": "左右两侧黑色波纹管壁断开，边缘呈现破损、撕裂状",
+    "接口位置": "管道在此处完全断开，暴露出外部的砖砌结构",
+    "异常细节": "黑色HDPE管壁在中间位置大面积破损缺失，环向范围超过60°，暴露出外围的砖砌井室或基础墙体，右侧断口处有泥土和碎石挤入"
+  },
+  "scan_findings": [
+    {
+      "position": "管道中部及右侧",
+      "description": "管壁大面积断裂缺失，暴露出砖砌体",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

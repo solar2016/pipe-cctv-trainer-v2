@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "ZA",
+      "grade": 2,
+      "confidence": 0.78,
+      "name": "障碍物",
+      "category": "功能性缺陷",
+      "recommendation": "特殊疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 2,
+    "confidence": 0.74
+  },
+  "unknown_route": {
+    "routed": false,
+    "from_code": "ZA",
+    "from_grade": 2,
+    "from_confidence": 0.78,
+    "candidate_codes": [
+      "ZA"
+    ],
+    "reason": "箭头区域可见管底有相对独立的浅色块状/片状外来物，边界较明确，位于水流通道内并造成局部阻挡，符合障碍物 ZA 的可见证据；不像连续平缓沉积层，图像也未显示管壁变形证据。"
+  }
+}

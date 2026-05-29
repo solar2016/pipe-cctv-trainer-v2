@@ -1,0 +1,33 @@
+{
+  "focus_dimensions": [
+    {
+      "dimension": "confusion",
+      "severity": "high",
+      "affected_codes": [
+        "ZA",
+        "CJ",
+        "BX",
+        "TJ"
+      ],
+      "evidence": "ZA与CJ存在严重的双向混淆（ZA->CJ 14次，CJ->ZA 4次），BX被误判为TJ达7次，这些混淆直接导致了ZA和TJ的F1值低下。",
+      "strategy": "在Prompt中细化ZA（障碍物）与CJ（沉积）的特征边界，明确区分外来物与管道内沉积；为BX（变形）与TJ（脱节）补充对比Few-Shot示例，强调管壁几何形变与接口分离的视觉差异。",
+      "expected_impact": "大幅降低ZA/CJ及BX/TJ的混淆频次，提升ZA和TJ的精确率与召回率。"
+    },
+    {
+      "dimension": "low_recall",
+      "severity": "high",
+      "affected_codes": [
+        "TG",
+        "QF",
+        "ZA"
+      ],
+      "evidence": "TG和QF的召回率均为0.000（F1=0.000），大样本类ZA的召回率也仅为0.479，存在严重的漏检问题。",
+      "strategy": "针对TG（树根）和QF（起伏）补充标准定义与典型图像特征描述，并各新增2个Few-Shot正例；在推理规则中加入对大类ZA的召回强化引导，降低其漏检率。",
+      "expected_impact": "实现TG和QF零的突破，将ZA的召回率提升至0.70以上，显著拉升宏平均F1。"
+    }
+  ],
+  "summary": "当前应优先通过细化特征定义与补充Few-Shot示例，解决ZA/CJ及BX/TJ的混淆，并攻克TG/QF的零召回问题。",
+  "skip_optimization": false,
+  "skip_reason": "",
+  "report_id": "eval_20260528_180457"
+}

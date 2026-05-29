@@ -1,0 +1,38 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 4,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向区域可见管壁大范围破损、开裂及局部脱落",
+        "管壁结构疑似向管内坍塌，破损范围较大",
+        "管道局部过水断面被破损变形的管壁明显侵占"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.72,
+      "visible_features": [
+        "管体截面明显失圆",
+        "上部及侧壁管壁向内凹陷、折皱",
+        "局部变形程度较大，疑似超过管径25%"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示管壁存在明显结构性异常，红色箭头指向区域可见管壁破裂、脱落并伴随较大范围内凹变形，局部断面受到明显侵占，初判为破裂PL 4级，并伴随严重变形BX 4级。建议进行人工复核，并优先考虑局部现场固化修复或开挖处理。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管底可见少量积水或淤积，但主要风险为结构性破损与变形"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

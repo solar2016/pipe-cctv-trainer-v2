@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "grade": 3,
+      "type": "功能性缺陷",
+      "confidence": 0.82,
+      "evidence": "管底连续淤积明显，局部厚度约占管径20%~40%，符合CJ 3级判据。",
+      "location": "管底，画面中下部至远端底部",
+      "reasoning": "沉积物呈泥砂状、湿润、连续铺展于管底，非单个孤立阻挡物；管道轮廓未见明确变形，因此主判为CJ而非BX/ZA。",
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 3,
+    "confidence": 0.78
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 2,
+      "confidence": 0.78,
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": "疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 2,
+    "confidence": 0.68
+  },
+  "unknown_route": {
+    "routed": false,
+    "from_code": "CJ",
+    "from_grade": 2,
+    "from_confidence": 0.78,
+    "candidate_codes": [
+      "CJ"
+    ],
+    "reason": "图中管道底部两侧可见连续、低位、较平缓的泥沙/淤泥沉积层，符合沉积 CJ 的可见证据；未见明确独立块状障碍物，CJ/ZA 冲突不明显。"
+  }
+}

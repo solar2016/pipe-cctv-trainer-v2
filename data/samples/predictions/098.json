@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "AJ",
+      "name": "支管暗接",
+      "grade": 1,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向管道左侧壁位置可见侧向接入的支管开口",
+        "支管未通过检查井而直接接入主管",
+        "支管伸入主管内长度较小，估计小于主管直径10%"
+      ],
+      "recommendation": "开挖处理或专项复核",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示左侧管壁存在侧向支管直接接入主管的特征，红色箭头指向该接入区域。支管伸入主管内长度较小，初判为支管暗接，等级暂定1级。建议结合现场资料和连续视频进一步复核。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "图像中未见明确渗漏水流",
+    "未见明显破裂、坍塌或严重沉积"
+  ],
+  "review_stage": "first_pass"
+}

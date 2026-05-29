@@ -1,0 +1,6 @@
+{
+  "sample_id": "097",
+  "anchor_type": "hard",
+  "target_code": "PL",
+  "note": "AI误判为JG（置信度55%），需重点学习"
+}

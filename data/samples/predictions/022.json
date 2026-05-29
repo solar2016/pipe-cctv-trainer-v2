@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 3,
+      "confidence": 0.72,
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": "疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 3,
+    "confidence": 0.78
+  },
+  "unknown_route": {
+    "routed": false,
+    "from_code": "CJ",
+    "from_grade": 3,
+    "from_confidence": 0.72,
+    "candidate_codes": [
+      "CJ"
+    ],
+    "reason": "箭头区域可见管底低位连续的泥沙/碎石状淤积层，符合沉积（CJ）证据；虽有颗粒块状物，但整体呈沿管底铺展的连续沉积，不足以构成CJ/ZA冲突。"
+  }
+}

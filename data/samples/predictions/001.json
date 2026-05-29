@@ -1,0 +1,51 @@
+{
+  "defects": [
+    {
+      "code": "JK",
+      "name": "接口材料脱落",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.58,
+        0.18,
+        0.76,
+        0.85
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "脱落橡胶圈约占接口周长的30%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧接口",
+      "visible_features": [
+        "接口处橡胶密封圈脱落并挤入管内",
+        "呈白色弧状条带"
+      ],
+      "recommendation": "建议进行局部修复或注浆封堵，重新固定或更换密封材料",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "检测图像显示，该HDPE管道右侧接口处发生接口材料脱落（JK），具体表现为密封橡胶圈脱落并挤出突入管内，可能影响管道接口的密封性能，建议及时进行修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，DN300",
+    "光照水位": "光照正常，中等水位，管底有黄色污水积聚",
+    "整体轮廓": "截面基本呈圆形，波纹管结构完整",
+    "管底形态": "管底被黄色积水覆盖，未见明显沉积物",
+    "管壁表面": "右侧管壁接口处存在异物突入",
+    "接口位置": "右侧接口处有明显的白色环状橡胶圈脱落并突入管腔",
+    "异常细节": "红色箭头指向的区域可见一圈白色的橡胶密封圈从接口缝隙中脱落、挤出，呈弧形悬挂在管壁右侧"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧管壁接口处",
+      "description": "脱落的白色橡胶密封圈",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

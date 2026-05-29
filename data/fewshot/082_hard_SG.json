@@ -1,0 +1,6 @@
+{
+  "sample_id": "082",
+  "anchor_type": "hard",
+  "target_code": "SG",
+  "note": "AI误判为SL（置信度68%），需重点学习"
+}

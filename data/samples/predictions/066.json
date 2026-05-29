@@ -1,0 +1,24 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 4,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向接口处可见明显错台",
+        "前后管口中心线不连续，管口横向偏离明显",
+        "错位部位形成突出的管口边缘并造成过水断面缩小"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示接口位置存在明显横向错位，前后管口中心线不连续，管口边缘突入管内并造成一定断面收缩，初判为错位缺陷，程度较重。同时管底可见一定泥沙沉积，建议结合现场复核后采取修复及清淤处理。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 2, 'confidence': 0.55, 'visible_features': ['管底可见泥沙、淤泥类沉积物', '沉积主要位于管道底部低位区域'], 'recommendation': '疏通处理'}"
+  ],
+  "review_stage": "first_pass"
+}

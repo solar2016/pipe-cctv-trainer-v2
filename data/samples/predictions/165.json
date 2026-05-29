@@ -1,0 +1,21 @@
+{
+  "defects": [
+    {
+      "code": "ZA",
+      "grade": 4,
+      "confidence": 0.92,
+      "name": "障碍物",
+      "category": "功能性缺陷",
+      "recommendation": "特殊疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 4,
+    "confidence": 0.88
+  }
+}

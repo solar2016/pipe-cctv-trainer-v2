@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.78,
+        0.45,
+        0.86,
+        0.98
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "缺陷约占接口区域的15%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧接口处",
+      "visible_features": [
+        "接口处管端脱开",
+        "可见明显环向间隙和反光"
+      ],
+      "recommendation": "局部现场固化法修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D=11.9m处，右侧接口存在脱节现象，接口处管端脱开，可见明显间隙。建议进行局部修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照，无水",
+    "整体轮廓": "截面呈圆形，管壁平整",
+    "管底形态": "管底未见明显异常",
+    "管壁表面": "管壁整体结构完整，右侧接口处有异常",
+    "接口位置": "右侧接口位置存在明显的环向脱开间隙",
+    "异常细节": "在右侧接口处，管端纵向分离，形成一条明显的弧形间隙，伴有强烈的反射光，提示存在脱节缺陷。"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧接口",
+      "description": "接口处管端脱开，存在明显环向间隙",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

@@ -1,0 +1,38 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向处可见管壁纵向裂口或破损开口",
+        "破裂边缘呈片状翘起/撕裂状，局部管壁完整性受损",
+        "缺陷区域附近管壁轮廓异常，疑似伴随局部破碎"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.55,
+      "visible_features": [
+        "管体局部轮廓不连续，疑似内凹或折叠变形",
+        "可见管道截面局部失圆，可能与破裂区域相关"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示红色箭头指向区域存在明显管壁裂口/破损，裂口边缘呈片状翘起，局部管壁完整性受损，符合破裂PL特征；同时周边管壁轮廓存在失圆、内凹或折叠迹象，疑似伴随变形BX。由于图像清晰度有限，破裂环向范围和变形程度建议现场复核确认。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "图像局部模糊、管内光照不均，缺陷边界和环向范围需人工复核",
+    "未见明确树根、沉积或独立障碍物特征"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

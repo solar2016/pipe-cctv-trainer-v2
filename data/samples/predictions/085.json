@@ -1,0 +1,23 @@
+{
+  "defects": [
+    {
+      "code": "FZ",
+      "name": "浮渣",
+      "grade": null,
+      "confidence": 0.83,
+      "visible_features": [
+        "红色箭头指向水面漂浮的白色块状/泡沫状物",
+        "管内水面可见多处漂浮物，随水面分布"
+      ],
+      "recommendation": "清理或人工复核",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "低",
+  "report_text": "该管段图像显示管内水面存在白色漂浮物，红色箭头指向区域为水面浮渣/漂浮杂物特征。当前画面未见明确破裂、错位、变形、渗漏等结构性缺陷证据。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管底有水流，局部可见少量杂物或漂浮碎屑，但未见明确结构性破损证据"
+  ],
+  "review_stage": "first_pass"
+}

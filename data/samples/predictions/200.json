@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.9,
+      "bbox": [
+        0.26,
+        0.3,
+        0.58,
+        0.45
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "管壁变形塌陷深度占管径的30%以上",
+      "defect_continuity": "孤立",
+      "position_detail": "管道顶部偏左侧向内塌陷",
+      "visible_features": [
+        "管体截面失圆",
+        "管壁局部内凹",
+        "形成明显的折叠尖角"
+      ],
+      "recommendation": "开挖处理或局部现场固化法修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "在检测距离2.8m处，管道顶部发生严重的向内塌陷变形（BX），变形量已超过管道直径的25%（4级），导致过水断面严重受限。建议及时进行开挖修复或局部固化修复，以防管道进一步塌毁。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管道截面严重变形，顶部管壁向内大幅度塌陷凹陷",
+    "管底形态": "管底平整，有少量水流和微量沉积物",
+    "管壁表面": "顶部管壁受压向内折叠，形成明显的折皱和棱角，表面未见明显的穿透性破裂",
+    "接口位置": "未见明显异常",
+    "异常细节": "管道上方受外力挤压，管壁向内塌陷，导致过水断面严重缩减，变形量估算超过25%"
+  },
+  "scan_findings": [
+    {
+      "position": "管道顶部",
+      "description": "管壁向内塌陷折叠变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

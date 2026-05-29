@@ -1,0 +1,31 @@
+{
+  "id": "eval_20260528_171237",
+  "label": "eval",
+  "timestamp": "2026-05-28T17:12:37",
+  "result": {
+    "total": 10,
+    "code_hits": 0,
+    "grade_hits": 0,
+    "unknowns": 4,
+    "code_accuracy": 0.0,
+    "grade_accuracy": 0.0,
+    "grade_within_one_accuracy": 0.0,
+    "unknown_rate": 0.4,
+    "per_code": {
+      "": {
+        "total": 10,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 4
+      }
+    },
+    "confusion": {
+      "": {
+        "UNKNOWN": 4,
+        "CJ": 4,
+        "CW": 1,
+        "JG": 1
+      }
+    }
+  }
+}

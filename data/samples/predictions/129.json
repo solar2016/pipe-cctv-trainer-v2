@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向管道顶部内壁，可见明显裂口及破损片状材料向管内翘起",
+        "局部管壁存在破碎、脱落迹象",
+        "破损范围位于局部弧段，未见超过管周大范围坍塌"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示，红色箭头所指的管道顶部区域存在明显破裂特征，可见管壁裂口及片状破损材料向管内翘起，属于结构性缺陷。破损范围为局部弧段，暂未见大范围坍塌，初判为PL破裂3级。建议结合现场复核后采取局部现场固化法修复或开挖处理。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管壁表面较粗糙并有附着物，但未见明确独立障碍物或持续渗漏水流"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

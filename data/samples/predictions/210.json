@@ -1,0 +1,23 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "grade": null,
+      "confidence": 0.98,
+      "location": "全段",
+      "description": "由于管道内存在严重雾气，导致图像质量不足，无法对管道结构或功能性缺陷做出有效判断。",
+      "name": "无法判断",
+      "category": "待复核",
+      "recommendation": "人工复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "UNKNOWN",
+    "grade": null,
+    "confidence": 0.95
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "std_20260528_151522",
+  "name": "民星路基地雨污水管道检测标准",
+  "source_file": "微信图片_20260528151252_95_80.jpg",
+  "uploaded_at": "2026-05-28T15:15:36",
+  "status": "parsed",
+  "defects": [
+    {
+      "code": "FS",
+      "name": "腐蚀",
+      "category": "结构性缺陷",
+      "definition": "",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "3": {
+          "description": "重度腐蚀：粗骨料或钢筋完全显露。",
+          "score": 6
+        }
+      }
+    },
+    {
+      "code": "CW",
+      "name": "错位",
+      "category": "结构性缺陷",
+      "definition": "同一接口的两个管口产生横向偏离，未处于管道的正确位置。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "轻度错位：错位距离少于管壁厚度1/2。",
+          "score": 1
+        },
+        "2": {
+          "description": "中度错位：错位距离在管壁厚度1/2及1倍之间。",
+          "score": 3
+        },
+        "3": {
+          "description": "重度错位：错位距离为管壁厚度1至2倍。",
+          "score": 6
+        },
+        "4": {
+          "description": "严重错位：错位距离为管壁厚度2倍以上。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "QF",
+      "name": "蛇形起伏",
+      "category": "功能性缺陷",
+      "definition": "接口位偏移，管道竖向或横向发生明显蛇形的变化，在低处形成洼水。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "水深/管径≤20%",
+          "score": 1
+        },
+        "2": {
+          "description": "20%<水位高/管径≤40%",
+          "score": 3
+        },
+        "3": {
+          "description": "40%<水位高/管径≤60%",
+          "score": 6
+        },
+        "4": {
+          "description": "水位高/管径>60%",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "category": "结构性缺陷",
+      "definition": "两根管道的端部未充分接合或接口脱离。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "轻度脱节：管道端部已有少量泥土挤入。",
+          "score": 1
+        },
+        "2": {
+          "description": "中度脱节：脱节距离为管壁厚度1/2~1倍",
+          "score": 3
+        },
+        "3": {
+          "description": "重度脱节：脱节距离处于管壁厚度1~2倍之间。",
+          "score": 6
+        },
+        "4": {
+          "description": "严重脱节：脱节距离为管壁厚度2倍以上。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "JK",
+      "name": "接口材料脱落",
+      "category": "结构性缺陷",
+      "definition": "橡胶圈、沥青、水泥等类似的接口材料进入管道。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "接口材料可在管道内水平方向中心线上部可见",
+          "score": 1
+        },
+        "2": {
+          "description": "接口材料可在管道内水平方向中心线下部可见",
+          "score": 3
+        }
+      }
+    },
+    {
+      "code": "AJ",
+      "name": "支管暗接",
+      "category": "结构性缺陷",
+      "definition": "支管未通过检查井直接侧向接入主管。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "支管进入主管内的长度小于主管直径10%。",
+          "score": 1
+        },
+        "2": {
+          "description": "支管进入主管内的长度在主管直径10%~20%之间。",
+          "score": 3
+        }
+      }
+    }
+  ],
+  "evaluation_formulas": {
+    "structural": null,
+    "functional": null
+  },
+  "evaluation_params": {
+    "K": null,
+    "E": null,
+    "T": null
+  },
+  "distance_rules": null
+}

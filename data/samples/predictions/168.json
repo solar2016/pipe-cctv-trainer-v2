@@ -1,0 +1,34 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "confidence": 0,
+      "visible_features": [
+        "模型未返回缺陷列表"
+      ],
+      "name": "无法判断",
+      "category": "待复核",
+      "recommendation": "人工复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material": "HDPE",
+    "diameter": 300,
+    "lighting": "良好",
+    "water_level": "低水位",
+    "overall_contour": "管道截面基本完整，呈圆形，为双壁波纹管结构",
+    "pipe_bottom": "管底有少量水流和树根、泥沙混合堆积",
+    "pipe_wall": "管壁两侧（尤其是右侧红箭头所指区域）有明显的黑色树根群自管壁缝隙穿入并沿管壁生长",
+    "joints": "树根主要从波纹管的环向接缝处侵入",
+    "abnormal_details": "右侧管壁有大面积黑色分叉的植物根系（树根）侵入，左侧亦有少量分布，部分树根已垂落至管底，估算过水断面损失在5%~15%之间"
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 2,
+    "confidence": 0.92
+  }
+}

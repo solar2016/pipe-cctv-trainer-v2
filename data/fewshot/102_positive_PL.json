@@ -1,0 +1,6 @@
+{
+  "sample_id": "102",
+  "anchor_type": "positive",
+  "target_code": "PL",
+  "note": "AI正确识别，置信度86%，场景：裂缝、破碎、脱落，质量A级"
+}

@@ -1,0 +1,35 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.64,
+      "visible_features": [
+        "红色箭头指向管道右上部管壁轮廓异常",
+        "可见管体截面局部失圆、右侧管壁有连续内凹/扁化趋势",
+        "未见明确裂缝、破口或破碎边缘，主要表现为管壁轮廓连续变形"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示红色箭头指向的右上部管壁存在局部轮廓失圆和连续内凹表现，初步判断为变形缺陷。未见清晰裂痕、裂口、破碎、渗漏、树根或独立障碍物证据。按可见变形幅度初判为2级，需结合视频连续画面和管径比例进一步复核。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管底可见少量积水或反光，未见明确连续泥沙沉积层",
+    "图像存在雾化、反光和漂浮颗粒干扰，局部细节清晰度一般"
+  ],
+  "review_stage": "first_pass",
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 2,
+    "from_confidence": 0.64,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "可见证据符合BX变形的特征，即管体截面失圆、局部内凹或连续轮廓变形；未出现完全遮挡、严重模糊或多类缺陷无法区分的情况，因此不路由UNKNOWN。"
+  }
+}

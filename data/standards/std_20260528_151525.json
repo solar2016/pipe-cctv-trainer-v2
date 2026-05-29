@@ -1,0 +1,89 @@
+{
+  "id": "std_20260528_151525",
+  "name": "管道结构性缺陷定义、等级划分及分值",
+  "source_file": "微信图片_20260528151251_94_80.jpg",
+  "uploaded_at": "2026-05-28T15:15:35",
+  "status": "parsed",
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "category": "结构性缺陷",
+      "definition": "管道的外部压力超过自身的承受力致使管子发生破裂。其形式有纵向、环向和复合三种。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "裂痕：当下列一个或多个情况存在时：1) 在管壁上可见细裂痕。2) 在管壁上由细裂缝处冒出少量沉积物。3) 轻度剥落",
+          "score": 1
+        },
+        "2": {
+          "description": "裂口：破裂处已形成明显间隙，但管道的形状未受影响且破裂无脱落。",
+          "score": 3
+        },
+        "3": {
+          "description": "破碎：管壁破裂或脱落处所剩碎片的环向覆盖范围小于弧长60°。",
+          "score": 6
+        },
+        "4": {
+          "description": "坍塌：当下列一个或多个情况存在时：1) 管道材料裂痕、裂口或破碎处边缘环向覆盖范围大于弧长60°。2) 管壁材料发生脱落的环向范围大于弧长60°。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "category": "结构性缺陷",
+      "definition": "管道受外力挤压造成形状变异",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "变形小于管道直径的5%。",
+          "score": 1
+        },
+        "2": {
+          "description": "变形为管道直径的5%~15%。",
+          "score": 3
+        },
+        "3": {
+          "description": "变形为管道直径的15~25%",
+          "score": 6
+        },
+        "4": {
+          "description": "变形大于管道直径的25%",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "FS",
+      "name": "腐蚀",
+      "category": "结构性缺陷",
+      "definition": "管道内壁受侵蚀而流失或剥落，出现麻面或露出钢筋。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "轻度腐蚀：表面剥落显露粗骨料或钢筋。",
+          "score": 1
+        },
+        "2": {
+          "description": "中度腐蚀：表面剥落显露粗骨料或钢筋。",
+          "score": 3
+        }
+      }
+    }
+  ],
+  "evaluation_formulas": {
+    "structural": null,
+    "functional": null
+  },
+  "evaluation_params": {
+    "K": null,
+    "E": null,
+    "T": null
+  },
+  "distance_rules": null
+}

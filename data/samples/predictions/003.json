@@ -1,0 +1,22 @@
+{
+  "defects": [
+    {
+      "code": "SG",
+      "grade": 1,
+      "confidence": 0.98,
+      "reason": "管壁上方有细长、分叉的树根穿透进入管内并垂落，过水断面损失远小于5%，符合树根（SG）1级特征。",
+      "name": "树根",
+      "category": "功能性缺陷",
+      "recommendation": "切割处理或疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 1,
+    "confidence": 0.95
+  }
+}

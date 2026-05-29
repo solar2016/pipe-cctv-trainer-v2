@@ -1,0 +1,51 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.07,
+        0.17,
+        0.78,
+        0.72
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "变形区域占管道断面的35%左右",
+      "defect_continuity": "连续",
+      "position_detail": "前部管体环向",
+      "visible_features": [
+        "管道截面呈扁平椭圆形",
+        "管壁材料连续无破口"
+      ],
+      "recommendation": "进行结构安全评估，必要时进行管道内衬修复或局部开挖更换",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "检测图像显示，HDPE管道（管径300）在D:9.08m处存在明显的变形缺陷。管体截面呈扁平椭圆形，失圆明显，但管壁材料仍然保持连续，未见裂缝或破损，初步判定为变形（BX）2级。建议后续密切关注其结构稳定性，并根据实际情况采取相应修复措施。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，无水",
+    "整体轮廓": "管道截面明显失圆，呈扁平椭圆形，管壁材料保持连续",
+    "管底形态": "管底有少量泥沙，无明显堆积",
+    "管壁表面": "管壁表面平整，未见明显裂缝或破损",
+    "接口位置": "接口处随管体一同呈扁平失圆状态",
+    "异常细节": "红色箭头指示处管壁截面呈明显的扁平化，横向拉伸，纵向受压，管体失圆，但未见破裂迹象"
+  },
+  "scan_findings": [
+    {
+      "position": "前部管体",
+      "description": "管体截面失圆，呈扁平椭圆形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

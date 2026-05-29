@@ -1,0 +1,17 @@
+{
+  "id": "manual_20260522_134651",
+  "label": "manual",
+  "timestamp": "2026-05-22T13:46:51",
+  "result": {
+    "total": 0,
+    "code_hits": 0,
+    "grade_hits": 0,
+    "unknowns": 0,
+    "code_accuracy": 0,
+    "grade_accuracy": 0,
+    "grade_within_one_accuracy": 0,
+    "unknown_rate": 0,
+    "per_code": {},
+    "confusion": {}
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.04,
+        0.28,
+        0.86,
+        0.95
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.25,
+      "defect_ratio_desc": "变形区域占整个管道截面约25%",
+      "defect_continuity": "连续",
+      "position_detail": "管道整体截面",
+      "visible_features": [
+        "管道截面呈扁平椭圆形",
+        "管壁轮廓不连续，局部向内凹陷"
+      ],
+      "recommendation": "建议进行局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段（HDPE材质，DN300）在D:13.75m处存在严重的结构性缺陷。管道截面受外力挤压发生扁平化变形（BX），截面呈椭圆形，变形等级评定为3级。管道顶部另见微量附着物与悬挂异物。建议对该段管道采取局部修复或开挖复核，以防变形进一步加剧引发坍塌。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "光照正常，伴有轻微雾气，低水位",
+    "整体轮廓": "管道截面严重失圆，呈扁平椭圆形，垂直方向受压明显",
+    "管底形态": "管底未见明显异常沉积",
+    "管壁表面": "管壁右侧向内凹陷，顶部有一处白色附着物且有细条状物悬挂",
+    "接口位置": "接口环向边缘随管体一同发生严重扁平变形",
+    "异常细节": "管道整体截面发生明显扁平化变形，垂直直径明显小于水平直径，变形量估计在15%至25%之间"
+  },
+  "scan_findings": [
+    {
+      "position": "管道整体截面",
+      "description": "管道受压失圆，呈扁平椭圆形变形",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管道顶部",
+      "description": "白色附着物及细条状悬挂物",
+      "confidence_level": "medium"
+    }
+  ],
+  "secondary_observations": [
+    "{'position': '管道顶部', 'description': '白色附着物伴有细长条状物悬挂，可能为轻微渗漏结垢或异物侵入'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 8,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 3,
+    "from_confidence": 0.88,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "图像清晰显示HDPE管道截面已严重失圆、扁化，符合变形（BX）的典型特征，判定证据充分。"
+  }
+}

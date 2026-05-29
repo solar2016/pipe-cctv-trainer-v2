@@ -1,0 +1,6 @@
+{
+  "sample_id": "038",
+  "anchor_type": "positive",
+  "target_code": "CW",
+  "note": "AI正确识别，置信度76%，场景：错位、间隙、环状，质量B级"
+}

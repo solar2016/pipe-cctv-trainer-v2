@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.95,
+      "bbox": [
+        0.45,
+        0.08,
+        0.82,
+        0.42
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "变形凹陷深度约占管径的35%",
+      "defect_continuity": "孤立",
+      "position_detail": "管道顶部",
+      "visible_features": [
+        "管体截面失圆",
+        "局部内凹",
+        "管壁轮廓严重变形"
+      ],
+      "recommendation": "开挖处理或局部现场固化法修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "检测图像显示，该DN300 HDPE管道顶部发生严重向内凹陷变形，导致管道截面严重失圆，过流断面受阻。变形量估算已超过管道直径的25%，判定为4级变形，结构安全风险高，建议尽快采取开挖修复或局部固化法等措施进行处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管道截面严重失圆，顶部向内凹陷变形",
+    "管底形态": "管底可见少量泥沙附着，水流较浅",
+    "管壁表面": "顶部管壁向内塌陷，波纹管壁严重挤压变形",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "管道顶部大面积向内凹陷，波纹管材质发生明显的结构性变形，导致管道过水断面严重缩减"
+  },
+  "scan_findings": [
+    {
+      "position": "管道顶部",
+      "description": "管壁向内严重凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

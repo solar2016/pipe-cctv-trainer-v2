@@ -1,7 +1,10 @@
 __pycache__/
 *.pyc
 .env
-data/
+data/video_uploads/
+data/video_tmp/
+data/frame_extracts/
+data/corrections/
 .vscode/
 .idea/
 *.md

@@ -1,0 +1,6 @@
+{
+  "sample_id": "102",
+  "anchor_type": "hard",
+  "target_code": "PL",
+  "note": "AI误判为BX（置信度74%），需重点学习"
+}

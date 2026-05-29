@@ -1,0 +1,80 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "图像整体极其模糊，可能由于镜头有水汽、污渍或聚焦不准导致前景完全无法辨认。虽然远端管口隐约呈现扁平状，但由于图像质量极差，无法排除成像干扰，证据不足以支持置信度为0.85的变形（BX）判定，应路由至UNKNOWN。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    },
+    {
+      "code": "ZA",
+      "name": "障碍物",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.57,
+        0.4,
+        0.81,
+        0.48
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.25,
+      "defect_ratio_desc": "树枝障碍物占用过水断面约20%-30%",
+      "defect_continuity": "孤立",
+      "position_detail": "变形管口底部",
+      "visible_features": [
+        "横向卡阻的树枝、木条等外来硬质物体"
+      ],
+      "recommendation": "使用专业工具或高压水射流进行清除疏通",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：图像整体极其模糊，可能由于镜头有水汽、污渍或聚焦不准导致前景完全无法辨认。虽然远端管口隐约呈现扁平状，但由于图像质量极差，无法排除成像干扰，证据不足以支持置信度为0.85的变形（BX）判定，应路由至UNKNOWN。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "塑料波纹管（标示为HOPE，应为HDPE），管径DN200",
+    "光照水位": "光照偏暗，深处光线不足；低至中等水位，管底有积水",
+    "整体轮廓": "管道截面明显失圆，中部深处管体呈现严重的压扁、扁平化变形迹象",
+    "管底形态": "管底可见较厚的泥沙沉积，且堆积有树枝状外来杂物",
+    "管壁表面": "管壁粗糙，附着有泥沙和污垢，纹理模糊不清",
+    "接口位置": "接口因光照不足及污物遮挡无法清晰辨识",
+    "异常细节": "管道深处截面严重缩窄变形，且在变形口处横向卡有数根树枝/木条等障碍物，严重阻碍过流"
+  },
+  "scan_findings": [
+    {
+      "position": "管道深处截面",
+      "description": "管身严重扁平化变形",
+      "confidence_level": "high"
+    },
+    {
+      "position": "变形管口底部",
+      "description": "横向堆积的树枝及木条障碍物",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管底前半部分",
+      "description": "泥沙淤积",
+      "confidence_level": "medium"
+    }
+  ],
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 2, 'confidence': 0.7, 'position_detail': '管底前半段', 'description': '可见明显的泥沙淤积，厚度约占管径的5%~20%'}"
+  ],
+  "review_stage": "first_pass",
+  "unknown_route": {
+    "routed": true,
+    "from_code": "BX",
+    "from_grade": 4,
+    "from_confidence": 0.85,
+    "candidate_codes": [
+      "UNKNOWN"
+    ],
+    "reason": "图像整体极其模糊，可能由于镜头有水汽、污渍或聚焦不准导致前景完全无法辨认。虽然远端管口隐约呈现扁平状，但由于图像质量极差，无法排除成像干扰，证据不足以支持置信度为0.85的变形（BX）判定，应路由至UNKNOWN。"
+  }
+}

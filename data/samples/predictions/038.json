@@ -1,0 +1,51 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.38,
+        0.1,
+        0.55,
+        0.84
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.3,
+      "defect_ratio_desc": "错位露出的端面约占整个管口周长的40%",
+      "defect_continuity": "孤立",
+      "position_detail": "接口偏右侧",
+      "visible_features": [
+        "接口处横向偏离",
+        "错台明显",
+        "中心线不连续",
+        "露出管子端面"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在接口处存在严重的错位缺陷，前段管口向右侧偏移，导致左侧管口端面暴露，形成明显错台，中心线不连续，建议采取局部修复或开挖处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "混凝土管，DN200",
+    "光照水位": "正常光照，无明显积水",
+    "整体轮廓": "管道截面在接口处不连续，出现明显的同心度偏差",
+    "管底形态": "管底由于接口错位产生台阶",
+    "管壁表面": "接口处露出管体端面，呈现黄色和灰色相间的断裂面",
+    "接口位置": "接口处发生明显的横向错位",
+    "异常细节": "管道接口处，前段管体向右侧偏移，导致左侧管口的端面完全暴露，形成明显的错台，中心线发生偏离。"
+  },
+  "scan_findings": [
+    {
+      "position": "接口处",
+      "description": "管口横向偏离，露出管壁端面",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

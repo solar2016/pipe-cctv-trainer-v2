@@ -1,0 +1,87 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.95,
+      "bbox": [
+        0.23,
+        0.21,
+        0.8,
+        0.53
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "管顶塌陷变形侵占了约35%的过水断面",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶至右侧管壁（约11点至2点方向）",
+      "visible_features": [
+        "管壁向内严重屈曲",
+        "双壁波纹管结构变形",
+        "露出外部填充物"
+      ],
+      "recommendation": "建议进行管道开挖修复或整体内衬修复",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "ZA",
+      "name": "障碍物",
+      "grade": 2,
+      "confidence": 0.9,
+      "bbox": [
+        0.11,
+        0.68,
+        0.27,
+        0.85
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.08,
+      "defect_ratio_desc": "块状障碍物约占管道断面的8%",
+      "defect_continuity": "孤立",
+      "position_detail": "左侧管底",
+      "visible_features": [
+        "块状砖石异物",
+        "表面呈红褐色"
+      ],
+      "recommendation": "建议进行机械疏通或人工清除",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该DN300 HDPE管段存在严重的结构性缺陷。管顶（11点至2点方向）发生严重向内屈曲变形（BX），变形量已超过管径的25%，属4级严重变形，严重影响结构安全与通水能力。此外，管底左侧存在一红褐色砖石类障碍物（ZA），占断面约8%，属2级障碍物。建议尽快安排对该管段进行开挖修复，并清除管内障碍物。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照，无明显积水，管壁潮湿",
+    "整体轮廓": "管道截面严重变形，上方管壁向内大幅度塌陷、起拱",
+    "管底形态": "管底左侧可见一块明显的块状砖石异物",
+    "管壁表面": "管壁上方波纹结构严重扭曲变形，并有部分泥土和碎石露出",
+    "接口位置": "未见明显接口异常，变形主要发生在管身段",
+    "异常细节": "管顶处的HDPE管壁发生严重向内屈曲变形，变形量明显超过管径的25%，且变形缝隙中可见泥砂和石块；左下角管底有块状障碍物。"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶至右侧管壁",
+      "description": "管壁严重向内屈曲塌陷",
+      "confidence_level": "high"
+    },
+    {
+      "position": "左侧管底",
+      "description": "块状红褐色异物",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 4,
+    "from_confidence": 0.95,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "图像清晰显示HDPE管道上部受外力挤压发生严重的向内屈曲和塌陷变形（红箭头所指），管腔截面形状发生极度扭曲，完全符合结构性缺陷‘变形（BX）’的特征，证据非常充分。"
+  }
+}

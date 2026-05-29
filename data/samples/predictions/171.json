@@ -1,0 +1,76 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.95,
+      "bbox": [
+        0.38,
+        0.15,
+        0.65,
+        0.5
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.45,
+      "defect_ratio_desc": "变形导致断面损失面积估计超过40%",
+      "defect_continuity": "连续",
+      "position_detail": "管道中后段拱顶及侧面",
+      "visible_features": [
+        "波纹管壁向内严重凹陷",
+        "管道截面呈双耳畸形"
+      ],
+      "recommendation": "此变形极其严重，建议立即进行开挖修复或管道内衬修复",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.15,
+        0.55,
+        0.28,
+        0.75
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "错位高度约占管壁厚度的50%~100%",
+      "defect_continuity": "孤立",
+      "position_detail": "前景左下侧接口处",
+      "visible_features": [
+        "接口处形成明显台阶",
+        "可见明显缝隙"
+      ],
+      "recommendation": "结合变形缺陷统一进行修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段（HDPE材质）存在多处严重缺陷。其中管道中后段发生4级严重变形（BX），管壁严重向内塌陷，导致过水断面损失严重，随时有塌方风险；此外，前景左下侧接口处存在2级错位（CW）。建议立即安排工程抢修。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE双壁波纹管，管径约为DN300-DN400",
+    "光照水位": "光照正常，低水位，管底有少量积水",
+    "整体轮廓": "管道中后段发生极严重的压扁变形，截面呈“心形”或双耳状，已严重失圆",
+    "管底形态": "管底有黄色污渍附着及轻微沉积物",
+    "管壁表面": "管壁表面有黄色和黑色污渍附着，波纹管壁有局部磨损迹象",
+    "接口位置": "前景左下方（红色箭头指示处）管口接口存在明显的错位与缝隙",
+    "异常细节": "管道中部（画面中央偏上区域）管壁向内严重塌陷，导致过水断面严重受限，变形量明显超过25%。前景左下角接口处可见明显的台阶状错位。"
+  },
+  "scan_findings": [
+    {
+      "position": "管道中后段拱顶及两侧",
+      "description": "管壁严重向内塌陷变形，断面呈畸形",
+      "confidence_level": "high"
+    },
+    {
+      "position": "前景左下侧接口处",
+      "description": "红色箭头指示的接口错位缝隙",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass"
+}

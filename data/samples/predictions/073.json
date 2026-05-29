@@ -1,0 +1,35 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头指向区域可见少量碎屑/泥沙样物，但未能清楚显示管底连续、低位、平缓的沉积层；同时局部有块状杂物，存在沉积CJ与障碍物ZA或施工残留的混淆，证据不足以确认主缺陷为CJ。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头指向区域可见少量碎屑/泥沙样物，但未能清楚显示管底连续、低位、平缓的沉积层；同时局部有块状杂物，存在沉积CJ与障碍物ZA或施工残留的混淆，证据不足以确认主缺陷为CJ。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 1,
+    "confidence": 0.58
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "CJ",
+    "from_grade": 1,
+    "from_confidence": 0.62,
+    "candidate_codes": [
+      "CJ",
+      "ZA"
+    ],
+    "reason": "箭头指向区域可见少量碎屑/泥沙样物，但未能清楚显示管底连续、低位、平缓的沉积层；同时局部有块状杂物，存在沉积CJ与障碍物ZA或施工残留的混淆，证据不足以确认主缺陷为CJ。"
+  }
+}

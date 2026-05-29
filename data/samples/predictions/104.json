@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "ZA",
+      "grade": 3,
+      "confidence": 0.72,
+      "name": "障碍物",
+      "category": "功能性缺陷",
+      "recommendation": "特殊疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 3,
+    "confidence": 0.78
+  },
+  "unknown_route": {
+    "routed": false,
+    "from_code": "ZA",
+    "from_grade": 3,
+    "from_confidence": 0.72,
+    "candidate_codes": [
+      "ZA"
+    ],
+    "reason": "箭头处可见管底有局部隆起的块状/团状黑色阻挡物，并夹杂疑似砖石或硬质碎块，形态较独立且影响过流，符合障碍物ZA的可见证据；虽有少量淤泥背景，但不像连续、低位、平缓沉积层，证据不足以路由UNKNOWN。"
+  }
+}

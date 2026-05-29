@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向管顶区域可见线状裂口或开裂痕迹",
+        "裂口处呈暗色缝隙，局部管壁连续性异常",
+        "管顶附近伴随局部翘起或破损边缘"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示，红色箭头指向的管顶区域存在明显线状开裂/裂口特征，局部管壁连续性受破坏，初判为PL破裂，程度倾向于2级。管顶附近还可见轻微局部轮廓异常，疑似伴随轻度变形，建议结合视频连续帧和现场复核确认范围及修复方式。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'BX', 'name': '变形', 'grade': 1, 'confidence': 0.45, 'visible_features': ['管顶局部轮廓似有轻微内凹或失圆，但图像透视和水雾影响判断'], 'recommendation': '局部现场固化法修复或开挖处理'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

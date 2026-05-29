@@ -1,0 +1,39 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.88,
+      "visible_features": [
+        "箭头指向管顶区域可见明显裂口",
+        "管壁存在撕裂、破碎和局部脱落现象",
+        "破裂部位已有管壁材料向管内翻折"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.78,
+      "visible_features": [
+        "管体截面明显失圆",
+        "局部管壁向内塌陷、折皱",
+        "变形程度较大，已明显影响管道通行断面"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示管顶及中部管壁存在明显破裂，裂口处管壁破碎并向管内翻折，同时管体截面出现严重失圆和内凹变形，已对管道过水断面造成明显影响。初判主要缺陷为破裂，伴随严重变形，风险较高，建议尽快进行人工复核并采取局部修复或开挖处理。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管底可见破碎管片或杂物堆积，对过水断面有一定阻挡",
+    "图像显示该处结构完整性受损明显，建议现场复核确认破损范围"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

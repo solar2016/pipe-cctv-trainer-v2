@@ -1,0 +1,62 @@
+{
+  "defects": [
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.45,
+        0.05,
+        0.58,
+        0.22
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.08,
+      "defect_ratio_desc": "结垢区域约占管壁可见截面的8%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶中部",
+      "visible_features": [
+        "管顶存在硬质结块",
+        "表面粗糙不平",
+        "与管壁融为一体，无法画出清晰的分离边界"
+      ],
+      "recommendation": "建议采用高压水射流或机械方式进行清除",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "低",
+  "report_text": "该管段在12.79m处，管顶12点钟方向存在一处局部结垢，呈硬质结块状，表面粗糙，未对管道结构完整性造成严重影响，建议后续进行清洗保养。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径 400",
+    "光照水位": "正常光照，中低水位",
+    "整体轮廓": "截面基本呈圆形，管壁波纹结构清晰",
+    "管底形态": "管底有水流，无明显沉积物",
+    "管壁表面": "管顶12点钟方向存在一处明显的、表面粗糙的硬质附着物，与管壁紧密粘连",
+    "接口位置": "接口处未见明显异常",
+    "异常细节": "红色箭头所指的管顶区域有一块呈灰褐色、表面凹凸不平的结块状附着物，与管壁融为一体，无明显分离边界"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶12点钟方向",
+      "description": "表面粗糙的结块状附着物",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "JG",
+    "from_grade": 2,
+    "from_confidence": 0.85,
+    "candidate_codes": [
+      "JG"
+    ],
+    "reason": "管顶处可见明显的黄色/褐色块状附着物，紧贴于管壁，符合结垢（JG）的定义（管道内壁上的附着物），且特征清晰，足以支持该判断。"
+  }
+}

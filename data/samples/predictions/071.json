@@ -1,0 +1,21 @@
+{
+  "defects": [
+    {
+      "code": "SG",
+      "grade": 3,
+      "confidence": 0.86,
+      "name": "树根",
+      "category": "功能性缺陷",
+      "recommendation": "切割处理或疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 3,
+    "confidence": 0.78
+  }
+}

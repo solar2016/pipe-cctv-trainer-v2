@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向处管壁可见局部裂口/破损",
+        "破损处有片状管壁向管内翻折或脱落迹象",
+        "缺陷范围为局部区域，未见超过大半环向的坍塌"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.45,
+      "visible_features": [
+        "破损附近管壁轮廓存在局部内凹和不连续变形"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示红色箭头指向区域存在明显局部管壁破损，伴随片状材料向管内翻折，符合破裂类缺陷特征。缺陷范围局限，未见大范围坍塌，初判为PL破裂3级；同时破损附近可见局部轮廓变形，建议人工复核确认破裂范围及是否伴随结构变形。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管壁表面附着少量污物，未见明显连续沉积层或树根侵入"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

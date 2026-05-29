@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.66,
+      "visible_features": [
+        "红色箭头指向管壁上部区域可见局部内凹和轮廓异常",
+        "管壁轮廓不圆顺，疑似受压后连续变形",
+        "未见明确断裂开口或破碎脱落边缘，较符合变形特征"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示红色箭头指向的上部管壁存在局部内凹、轮廓不圆顺等变形迹象，初判为变形缺陷。管底同时可见较厚泥沙沉积，并有蓝色片状外来物堆置，可能影响过流。建议结合现场视频连续帧复核变形范围及断面损失程度。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 3, 'visible_features': ['管底可见较厚泥沙/颗粒状沉积物', '沉积层沿底部铺展并占据一定过水断面']}",
+    "{'code': 'ZA', 'name': '障碍物', 'grade': 2, 'visible_features': ['管底中部可见蓝色片状/团状外来物，疑似塑料布或施工残留', '局部占据过水断面']}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 6,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 3,
+    "from_confidence": 0.66,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "箭头指向的管壁区域可见连续性轮廓内凹/失圆迹象，符合变形（BX）的可见证据；该区域未被明显遮挡，且不像独立障碍物造成的阻挡。"
+  }
+}

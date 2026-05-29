@@ -1,0 +1,6 @@
+{
+  "sample_id": "201",
+  "anchor_type": "hard",
+  "target_code": "BX",
+  "note": "AI误判为（置信度0%），场景：特征不明显"
+}

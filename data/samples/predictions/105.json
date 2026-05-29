@@ -1,0 +1,76 @@
+{
+  "defects": [
+    {
+      "code": "JK",
+      "name": "接口材料脱落",
+      "grade": 1,
+      "confidence": 0.85,
+      "bbox": [
+        0.25,
+        0.28,
+        0.85,
+        0.62
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "脱落的接口材料及异常接口区域约占画面可用面积的12%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶偏右接口处",
+      "visible_features": [
+        "接口处黑色橡胶圈脱落并突入管内",
+        "接口周围伴有白黄色结垢物"
+      ],
+      "recommendation": "采用局部现场固化法或不锈钢双胀环进行局部修复",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 1,
+      "confidence": 0.8,
+      "bbox": [
+        0.15,
+        0.05,
+        0.95,
+        0.6
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "结垢区域约占管壁上方画面的35%",
+      "defect_continuity": "连续",
+      "position_detail": "管顶及两侧上半管壁",
+      "visible_features": [
+        "管壁附着大量白色至黄褐色硬质结垢"
+      ],
+      "recommendation": "建议采用高压水射流清洗或机械切削清洗",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该HDPE管段在D:14.06m处存在接口异常。管顶偏右接口处的黑色橡胶密封圈已发生脱落并突入管内，属于1级接口材料脱落缺陷；同时，管顶及上半管壁存在大面积白黄色结垢。建议对结垢进行高压清洗，并对橡胶圈脱落的接口进行局部修复，以防引起渗漏或进一步脱节。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面基本呈圆形，管壁轮廓无明显变形",
+    "管底形态": "管底有少量积水，无明显沉积物",
+    "管壁表面": "管顶及两侧上半部分管壁有大面积白黄色结垢附着",
+    "接口位置": "管顶偏右处的管道接口位置存在异常，橡胶密封圈发生脱落并突入管内",
+    "异常细节": "红色箭头指向的接口处，黑色的橡胶密封圈已从接口槽内脱落，部分悬挂突入管内，且接口周边伴有大量白色结垢和泥沙附着"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶偏右接口处",
+      "description": "接口橡胶密封圈脱落突入管内",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管顶及上半管壁",
+      "description": "大面积白黄色结垢附着",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

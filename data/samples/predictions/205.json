@@ -1,0 +1,32 @@
+{
+  "defects": [
+    {
+      "observation": "图像极其模糊，充斥着大量雾气、水滴或镜头遮挡物，导致管道内部结构完全无法看清。",
+      "scan_findings": {
+        "material_diameter": "根据文字叠加显示，管道材质为HDPE（图中误写为HOPE），管径为200mm。",
+        "lighting_water": "光照受严重雾气散射影响，无法判断实际光照和水位情况。",
+        "outline": "无法辨认管道截面轮廓。",
+        "bottom": "管底形态完全被雾气遮挡，无法观察。",
+        "wall": "管壁表面完全不可见。",
+        "joints": "接口位置完全不可见。",
+        "details": "整张图片被绿褐色及白色的雾气、水雾或附着在镜头上的水滴覆盖，没有任何可用于结构或功能性缺陷判断的视觉线索。"
+      },
+      "reassessment": "经过重新扫描，确认图像由于严重的雾气或镜头水滴遮挡，完全丧失了检测能见度，无法进行任何缺陷识别。第一阶段判定为UNKNOWN（无法判断）是准确的。",
+      "code": "UNKNOWN",
+      "grade": null,
+      "confidence": 0.98,
+      "name": "无法判断",
+      "category": "待复核",
+      "recommendation": "人工复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "UNKNOWN",
+    "grade": null,
+    "confidence": 0.95
+  }
+}

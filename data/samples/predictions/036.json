@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 3,
+      "confidence": 0.85,
+      "bbox": [
+        0.08,
+        0.02,
+        0.78,
+        0.72
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "结垢区域约占管腔截面面积的30%-35%",
+      "defect_continuity": "连续",
+      "position_detail": "管壁拱顶及两侧上方",
+      "visible_features": [
+        "大面积白色块状附着物",
+        "表面粗糙不平",
+        "管腔断面明显变小"
+      ],
+      "recommendation": "建议采用高压水射流或机械切削进行疏通清洗",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D:12.49m处存在严重的结垢缺陷。管道上半圈及两侧大面积附着白色块状结垢物，导致管腔过水断面面积损失约30%，属于3级结垢，严重影响通水能力。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "光照正常，中低水位",
+    "整体轮廓": "截面基本呈圆形",
+    "管底形态": "管底有积水，可见少量漂浮物或沉积",
+    "管壁表面": "管壁上半部及两侧有大面积白色至淡黄色块状附着物，表面极其粗糙",
+    "接口位置": "未见明显异常",
+    "异常细节": "管道上半圈及两侧大面积附着白色块状结垢物，导致管腔过水断面明显缩小，结垢表面凹凸不平"
+  },
+  "scan_findings": [
+    {
+      "position": "管壁上半部及两侧",
+      "description": "大面积白色块状附着物",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

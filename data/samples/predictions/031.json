@@ -1,0 +1,22 @@
+{
+  "defects": [
+    {
+      "code": "ZA",
+      "name": "障碍物",
+      "grade": 2,
+      "confidence": 0.82,
+      "evidence": "管底存在独立块状外来物/硬块堆集，局部阻挡过水断面，估计断面损失约5%-15%。",
+      "recommendation": "特殊疏通处理",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 2,
+    "confidence": 0.78
+  }
+}

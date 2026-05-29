@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.22,
+        0.22,
+        0.73,
+        0.38
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "变形高度占管径约12%",
+      "defect_continuity": "孤立",
+      "position_detail": "管道顶部",
+      "visible_features": [
+        "管壁顶部扁化",
+        "局部内凹"
+      ],
+      "recommendation": "局部现场固化法修复或进行专项复核",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D:7.86m处发现顶部管壁局部内凹变形（BX），变形量约为12%，属于2级中度变形。建议结合后续检测情况进行局部固化修复或加强监测。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE双壁波纹管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管道截面顶部明显扁化内凹，失去圆形轮廓",
+    "管底形态": "管底有少量流动水及轻微沉积",
+    "管壁表面": "顶部管壁向下塌陷，内壁表面平整度受损",
+    "接口位置": "接口处未见明显异常",
+    "异常细节": "管道顶部管壁受外力挤压发生明显的局部内凹变形，截面呈扁平状，变形量估算在10%至15%之间"
+  },
+  "scan_findings": [
+    {
+      "position": "管道顶部",
+      "description": "管壁局部向内凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

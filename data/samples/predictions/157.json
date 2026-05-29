@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.48,
+        0.15,
+        0.65,
+        0.32
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.1,
+      "defect_ratio_desc": "变形区域约占管壁局部截面的10%",
+      "defect_continuity": "孤立",
+      "position_detail": "右上方管壁（约1点钟方向）",
+      "visible_features": [
+        "管壁向内凹陷",
+        "局部截面失圆",
+        "条状褶皱"
+      ],
+      "recommendation": "局部现场固化法修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在 D:13.04m 处，右上方管壁（约1点钟方向）存在局部受压向内凹陷变形（BX），变形等级评定为2级。建议进行局部修复或结合管道整体状况进行定期监测。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面局部失圆，右上方管壁出现明显受压内凹和褶皱",
+    "管底形态": "管底平整，无明显异常",
+    "管壁表面": "右上方管壁有局部凹陷变形",
+    "接口位置": "接口未见明显异常",
+    "异常细节": "管道右上方（大约1点钟方向）管壁向内凹陷，形成明显的局部条状褶皱变形"
+  },
+  "scan_findings": [
+    {
+      "position": "右上方管壁",
+      "description": "局部受压向内凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

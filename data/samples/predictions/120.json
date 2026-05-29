@@ -1,0 +1,79 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.95,
+      "bbox": [
+        0.3,
+        0.0,
+        0.81,
+        0.61
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "破裂脱落面积约占画面上半部分的35%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶至管壁中部",
+      "visible_features": [
+        "表层大面积撕裂、剥落",
+        "露出黑色管体",
+        "边缘翘起"
+      ],
+      "recommendation": "进行局部修复或整体内衬修复",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 1,
+      "confidence": 0.9,
+      "bbox": [
+        0.47,
+        0.74,
+        0.64,
+        0.83
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.05,
+      "defect_ratio_desc": "破裂面积约占管底视野的5%",
+      "defect_continuity": "孤立",
+      "position_detail": "管底",
+      "visible_features": [
+        "表层局部破裂脱落"
+      ],
+      "recommendation": "结合上方大面积破损统一修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示管壁存在严重缺陷：管壁上方至中部出现大面积表层（内衬）破裂及脱落（PL），暴露出黑色底层管体，边缘翘起；管底亦存在一处较小的表层破裂。建议尽快安排管道修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径500",
+    "光照水位": "正常光照，无水",
+    "整体轮廓": "截面基本呈圆形，但管壁内衬表面出现大面积剥离和破损",
+    "管底形态": "管底无明显沉积物，但有下方破损区域的边缘显现",
+    "管壁表面": "管壁上方及中部出现大面积浅色表层（内衬）破裂脱落，暴露出深黑色的底层管体，边缘呈现不规则撕裂状且有翘起；管壁下方亦有一处较小的同类表层破损",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "大面积的表层破裂脱落，暴露出大片黑色基底，边缘不规则，有剥离翘起的特征。下方另有一处小范围的表层破裂"
+  },
+  "scan_findings": [
+    {
+      "position": "管壁上方及中部",
+      "description": "大面积表层破裂脱落，露出黑色管体底层",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管壁下方",
+      "description": "小面积表层破裂",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

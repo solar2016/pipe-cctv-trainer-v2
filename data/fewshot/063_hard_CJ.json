@@ -1,0 +1,6 @@
+{
+  "sample_id": "063",
+  "anchor_type": "hard",
+  "target_code": "CJ",
+  "note": "AI误判为UNKNOWN（置信度40%），场景：泥沙、积水、底部"
+}

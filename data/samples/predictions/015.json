@@ -1,0 +1,26 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 2,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向接口位置可见明显错台",
+        "同一接口前后管口中心线不连续",
+        "右上侧管口边缘向管内形成阶差，符合接口横向偏离特征"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示红色箭头所指接口处存在管口错台，前后管节边缘不在同一连续轮廓上，表现为接口横向偏离，初判为CW错位，程度约为中度。图像中另见少量杂物、根须样附着及管底沉积，建议人工复核确认错位程度及是否伴随其他功能性缺陷。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管内可见少量根须状或杂物状附着物，但主要缺陷为接口错位",
+    "管底存在少量泥沙或污物沉积，未作为主缺陷判定"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 6
+}

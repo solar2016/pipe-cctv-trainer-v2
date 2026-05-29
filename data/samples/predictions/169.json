@@ -1,0 +1,56 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.49,
+        0.48,
+        0.72,
+        0.63
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "缺陷约占局部管壁画面的12%",
+      "defect_continuity": "孤立",
+      "position_detail": "右侧管壁中部",
+      "visible_features": [
+        "HDPE管内壁剥离",
+        "可见明显裂口与间隙"
+      ],
+      "recommendation": "局部现场固化法修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在10.16米处检测发现右侧管壁存在破裂（PL）缺陷，表现为HDPE波纹管内壁局部层间剥离与开裂，已形成明显间隙，评估等级为2级。另见远端存在疑似接口材料脱落，建议结合整段视频进行复核，并考虑采用局部现场固化法进行修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，约 DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面基本呈圆形",
+    "管底形态": "管底可见少量散落杂物",
+    "管壁表面": "右侧管壁波纹处有明显的层间剥离、开裂痕迹，内壁局部脱开",
+    "接口位置": "远端接口处有环状物凸出，疑似接口材料脱落",
+    "异常细节": "红箭头指向右侧管壁，可见HDPE管内壁发生局部开裂与剥离，形成明显的弧形裂口与间隙"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧管壁",
+      "description": "管壁内层剥离、开裂",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管中远端",
+      "description": "环状异物突出",
+      "confidence_level": "medium"
+    }
+  ],
+  "secondary_observations": [
+    "{'code': 'JK', 'name': '接口材料脱落', 'description': '远端管中可见疑似橡胶圈脱落凸出'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

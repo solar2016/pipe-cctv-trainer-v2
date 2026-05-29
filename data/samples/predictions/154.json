@@ -1,0 +1,60 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.9,
+      "bbox": [
+        0.15,
+        0.45,
+        0.8,
+        0.85
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.2,
+      "defect_ratio_desc": "变形高度约占管道直径的20%",
+      "defect_continuity": "连续",
+      "position_detail": "管底及左下侧",
+      "visible_features": [
+        "管壁向内隆起",
+        "截面失圆",
+        "白色环形轮廓线严重扭曲"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该HDPE 300管段在D:3.88m处存在严重的变形缺陷，管底及左下侧管壁向内显著隆起拱起，导致管道截面严重失圆，过水断面损失约20%，判定为BX（变形）3级，建议进行局部修复或开挖处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照，低水位，有轻微雾气",
+    "整体轮廓": "截面失圆，管底及下部管壁明显向内隆起变形",
+    "管底形态": "管底明显向上拱起",
+    "管壁表面": "管壁下侧轮廓线（白色环）发生严重变形，不再呈圆形",
+    "接口位置": "接口处未见明显异常",
+    "异常细节": "管底及左下侧管壁向管内严重挤压变形，导致过水断面明显减小"
+  },
+  "scan_findings": [
+    {
+      "position": "管底及左下侧管壁",
+      "description": "管壁向内隆起，截面失圆变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 3,
+    "from_confidence": 0.9,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "图像中HDPE管道在外部压力作用下发生明显的向内屈曲和波浪状变形，管体截面严重失圆，符合变形（BX）的特征，红箭头明确指出了变形位置，证据充分。"
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "self_consistency": {
+    "module": "self_consistency",
+    "checked": 210,
+    "issues": [
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "003",
+        "code": "SG",
+        "confidence": 0.98,
+        "feature_count": 0,
+        "description": "高置信度(98%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "004",
+        "code": "SG",
+        "confidence": 0.88,
+        "feature_count": 0,
+        "description": "高置信度(88%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "005",
+        "code": "SG",
+        "confidence": 0.88,
+        "feature_count": 0,
+        "description": "高置信度(88%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "007",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "018",
+        "code": "ZA",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "019",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "021",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "029",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "030",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "031",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "037",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "041",
+        "code": "BX",
+        "bbox_area": 6750,
+        "defect_ratio": 0.08,
+        "description": "bbox面积(6750.000)与defect_ratio(0.080)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "043",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "045",
+        "code": "JG",
+        "bbox_area": 0.524,
+        "defect_ratio": 0.12,
+        "description": "bbox面积(0.524)与defect_ratio(0.120)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "050",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "051",
+        "code": "BX",
+        "bbox_area": 0.084,
+        "defect_ratio": 0.5,
+        "description": "bbox面积(0.084)与defect_ratio(0.500)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "052",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "053",
+        "code": "ZA",
+        "confidence": 0.88,
+        "feature_count": 0,
+        "description": "高置信度(88%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "055",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "058",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "059",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "062",
+        "code": "CJ",
+        "confidence": 0.84,
+        "feature_count": 0,
+        "description": "高置信度(84%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "065",
+        "code": "CJ",
+        "confidence": 0.84,
+        "feature_count": 0,
+        "description": "高置信度(84%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "069",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "070",
+        "code": "ZA",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "071",
+        "code": "SG",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "076",
+        "code": "SG",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "077",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "079",
+        "code": "CJ",
+        "confidence": 0.84,
+        "feature_count": 0,
+        "description": "高置信度(84%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "080",
+        "code": "CJ",
+        "confidence": 0.9,
+        "feature_count": 0,
+        "description": "高置信度(90%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "082",
+        "code": "SL",
+        "confidence": 0.85,
+        "feature_count": 1,
+        "description": "高置信度(85%)但特征数不足(1个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "083",
+        "code": "ZA",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "084",
+        "code": "BX",
+        "bbox_area": 21780,
+        "defect_ratio": 0.22,
+        "description": "bbox面积(21780.000)与defect_ratio(0.220)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "087",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "090",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "092",
+        "code": "SG",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "093",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "095",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "096",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "108",
+        "code": "CJ",
+        "confidence": 0.84,
+        "feature_count": 0,
+        "description": "高置信度(84%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "109",
+        "code": "BX",
+        "bbox_area": 176550,
+        "defect_ratio": 0.45,
+        "description": "bbox面积(176550.000)与defect_ratio(0.450)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "112",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "114",
+        "code": "ZA",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "118",
+        "code": "ZA",
+        "confidence": 0.88,
+        "feature_count": 0,
+        "description": "高置信度(88%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "124",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "128",
+        "code": "TJ",
+        "bbox_area": 7991,
+        "defect_ratio": 0.06,
+        "description": "bbox面积(7991.000)与defect_ratio(0.060)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "141",
+        "code": "ZA",
+        "confidence": 0.9,
+        "feature_count": 0,
+        "description": "高置信度(90%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "146",
+        "code": "TJ",
+        "bbox_area": 0.689,
+        "defect_ratio": 0.3,
+        "description": "bbox面积(0.689)与defect_ratio(0.300)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "148",
+        "code": "ZA",
+        "confidence": 0.9,
+        "feature_count": 0,
+        "description": "高置信度(90%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "151",
+        "code": "BX",
+        "bbox_area": 17575,
+        "defect_ratio": 0.12,
+        "description": "bbox面积(17575.000)与defect_ratio(0.120)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "153",
+        "code": "TJ",
+        "confidence": 0.85,
+        "feature_count": 1,
+        "description": "高置信度(85%)但特征数不足(1个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "158",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "163",
+        "code": "CJ",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "165",
+        "code": "ZA",
+        "confidence": 0.92,
+        "feature_count": 0,
+        "description": "高置信度(92%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "170",
+        "code": "SG",
+        "confidence": 0.95,
+        "feature_count": 0,
+        "description": "高置信度(95%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "171",
+        "code": "BX",
+        "bbox_area": 0.095,
+        "defect_ratio": 0.45,
+        "description": "bbox面积(0.095)与defect_ratio(0.450)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "176",
+        "code": "SG",
+        "confidence": 0.86,
+        "feature_count": 0,
+        "description": "高置信度(86%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "186",
+        "code": "CJ",
+        "confidence": 0.82,
+        "feature_count": 0,
+        "description": "高置信度(82%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "193",
+        "code": "CJ",
+        "confidence": 0.84,
+        "feature_count": 0,
+        "description": "高置信度(84%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "196",
+        "code": "ZA",
+        "confidence": 0.9,
+        "feature_count": 0,
+        "description": "高置信度(90%)但特征数不足(0个)"
+      },
+      {
+        "type": "bbox_ratio_mismatch",
+        "sample_id": "200",
+        "code": "BX",
+        "bbox_area": 0.048,
+        "defect_ratio": 0.35,
+        "description": "bbox面积(0.048)与defect_ratio(0.350)偏差大"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "204",
+        "code": "CJ",
+        "confidence": 0.95,
+        "feature_count": 0,
+        "description": "高置信度(95%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "205",
+        "code": "UNKNOWN",
+        "confidence": 0.98,
+        "feature_count": 0,
+        "description": "高置信度(98%)但特征数不足(0个)"
+      },
+      {
+        "type": "unknown_high_conf",
+        "sample_id": "205",
+        "confidence": 0.98,
+        "description": "UNKNOWN但置信度较高(98%)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "207",
+        "code": "CJ",
+        "confidence": 0.95,
+        "feature_count": 0,
+        "description": "高置信度(95%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "210",
+        "code": "UNKNOWN",
+        "confidence": 0.98,
+        "feature_count": 0,
+        "description": "高置信度(98%)但特征数不足(0个)"
+      },
+      {
+        "type": "unknown_high_conf",
+        "sample_id": "210",
+        "confidence": 0.98,
+        "description": "UNKNOWN但置信度较高(98%)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "211",
+        "code": "CJ",
+        "confidence": 0.9,
+        "feature_count": 0,
+        "description": "高置信度(90%)但特征数不足(0个)"
+      },
+      {
+        "type": "high_conf_low_features",
+        "sample_id": "212",
+        "code": "CJ",
+        "confidence": 0.9,
+        "feature_count": 0,
+        "description": "高置信度(90%)但特征数不足(0个)"
+      }
+    ],
+    "issue_count": 69,
+    "score": 0.671
+  },
+  "adversarial_confusion": {
+    "module": "adversarial_confusion",
+    "high_risk_pairs": [
+      {
+        "true_code": "TG",
+        "pred_code": "UNKNOWN",
+        "count": 3,
+        "true_f1": 0,
+        "pred_f1": 0,
+        "risk_score": 300.0,
+        "description": "TG↔UNKNOWN (混淆3次, 风险300.0)"
+      },
+      {
+        "true_code": "ZA",
+        "pred_code": "UNKNOWN",
+        "count": 4,
+        "true_f1": 0.597,
+        "pred_f1": 0,
+        "risk_score": 67.0,
+        "description": "ZA↔UNKNOWN (混淆4次, 风险67.0)"
+      },
+      {
+        "true_code": "BX",
+        "pred_code": "TJ",
+        "count": 7,
+        "true_f1": 0.815,
+        "pred_f1": 0.133,
+        "risk_score": 64.58,
+        "description": "BX↔TJ (混淆7次, 风险64.6)"
+      },
+      {
+        "true_code": "SG",
+        "pred_code": "UNKNOWN",
+        "count": 3,
+        "true_f1": 0.583,
+        "pred_f1": 0,
+        "risk_score": 51.46,
+        "description": "SG↔UNKNOWN (混淆3次, 风险51.5)"
+      },
+      {
+        "true_code": "ZA",
+        "pred_code": "CJ",
+        "count": 14,
+        "true_f1": 0.597,
+        "pred_f1": 0.643,
+        "risk_score": 36.47,
+        "description": "ZA↔CJ (混淆14次, 风险36.5)"
+      },
+      {
+        "true_code": "PL",
+        "pred_code": "UNKNOWN",
+        "count": 3,
+        "true_f1": 0.846,
+        "pred_f1": 0,
+        "risk_score": 35.46,
+        "description": "PL↔UNKNOWN (混淆3次, 风险35.5)"
+      },
+      {
+        "true_code": "ZA",
+        "pred_code": "JG",
+        "count": 4,
+        "true_f1": 0.597,
+        "pred_f1": 0.2,
+        "risk_score": 33.5,
+        "description": "ZA↔JG (混淆4次, 风险33.5)"
+      },
+      {
+        "true_code": "ZA",
+        "pred_code": "FZ",
+        "count": 2,
+        "true_f1": 0.597,
+        "pred_f1": 0,
+        "risk_score": 33.5,
+        "description": "ZA↔FZ (混淆2次, 风险33.5)"
+      },
+      {
+        "true_code": "CJ",
+        "pred_code": "UNKNOWN",
+        "count": 2,
+        "true_f1": 0.643,
+        "pred_f1": 0,
+        "risk_score": 31.1,
+        "description": "CJ↔UNKNOWN (混淆2次, 风险31.1)"
+      },
+      {
+        "true_code": "TJ",
+        "pred_code": "BX",
+        "count": 3,
+        "true_f1": 0.133,
+        "pred_f1": 0.815,
+        "risk_score": 27.68,
+        "description": "TJ↔BX (混淆3次, 风险27.7)"
+      }
+    ],
+    "focus_codes": [
+      {
+        "code": "QF",
+        "f1": 0,
+        "support": 1,
+        "recall": 0.0,
+        "precision": 0,
+        "description": "QF: F1=0.000, 召回率=0.000"
+      },
+      {
+        "code": "TG",
+        "f1": 0,
+        "support": 5,
+        "recall": 0.0,
+        "precision": 0,
+        "description": "TG: F1=0.000, 召回率=0.000"
+      },
+      {
+        "code": "TJ",
+        "f1": 0.133,
+        "support": 4,
+        "recall": 0.25,
+        "precision": 0.091,
+        "description": "TJ: F1=0.133, 召回率=0.250"
+      },
+      {
+        "code": "JG",
+        "f1": 0.2,
+        "support": 1,
+        "recall": 1.0,
+        "precision": 0.111,
+        "description": "JG: F1=0.200, 召回率=1.000"
+      },
+      {
+        "code": "SG",
+        "f1": 0.583,
+        "support": 14,
+        "recall": 0.5,
+        "precision": 0.7,
+        "description": "SG: F1=0.583, 召回率=0.500"
+      },
+      {
+        "code": "ZA",
+        "f1": 0.597,
+        "support": 48,
+        "recall": 0.479,
+        "precision": 0.793,
+        "description": "ZA: F1=0.597, 召回率=0.479"
+      }
+    ],
+    "recommendations": [
+      "为 TG→UNKNOWN 的混淆添加 fewshot 锚点，重点展示两者视觉差异",
+      "为 ZA→UNKNOWN 的混淆添加 fewshot 锚点，重点展示两者视觉差异",
+      "为 BX→TJ 的混淆添加 fewshot 锚点，重点展示两者视觉差异",
+      "QF 召回率过低(0%)，建议增加正例 fewshot",
+      "TG 召回率过低(0%)，建议增加正例 fewshot",
+      "TJ 召回率过低(25%)，建议增加正例 fewshot"
+    ]
+  },
+  "historical_regression": {
+    "module": "historical_regression",
+    "prev_accuracy": 0.63,
+    "curr_accuracy": 0.63,
+    "delta": 0.0,
+    "trend": "stable",
+    "category_changes": [],
+    "summary": "整体趋势: 稳定 (准确率变化: +0.0%)"
+  }
+}

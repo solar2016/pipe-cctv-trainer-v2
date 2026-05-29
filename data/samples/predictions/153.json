@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "AJ",
+      "name": "支管暗接",
+      "grade": 3,
+      "confidence": 0.9,
+      "bbox": [
+        0.38,
+        0.25,
+        0.63,
+        0.58
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "支管开口约占管壁截面面积的12%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶11点钟方向",
+      "visible_features": [
+        "管壁上方开孔，有侧向支管接入"
+      ],
+      "recommendation": "进行管道开挖修复或非开挖局部封堵",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "在D:9.75m处，HDPE管道上方偏左（约11点钟方向）发现一处支管暗接（AJ），支管开口清晰，建议结合现场情况进行整改复核。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，无水或低水位",
+    "整体轮廓": "截面基本呈圆形，管壁平整",
+    "管底形态": "管底未见明显异常",
+    "管壁表面": "管壁上方偏左侧存在一个明显的圆形开口，与主管连通",
+    "接口位置": "非正常接口处出现支管接入",
+    "异常细节": "红色箭头指向管顶偏左上方（约11点钟方向）的一个圆形支管开口，管口平整，无正规连接配件，属于支管暗接"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶偏左上方",
+      "description": "圆形支管开口接入",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

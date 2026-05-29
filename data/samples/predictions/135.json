@@ -1,0 +1,35 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头区域可见管底暗色淤积/块状物，但形态不够清晰，难以判断是连续、低位、平缓的沉积层，还是局部块状障碍物；存在 CJ/ZA 冲突，当前 CJ 证据不足。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头区域可见管底暗色淤积/块状物，但形态不够清晰，难以判断是连续、低位、平缓的沉积层，还是局部块状障碍物；存在 CJ/ZA 冲突，当前 CJ 证据不足。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 3,
+    "confidence": 0.74
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "CJ",
+    "from_grade": 3,
+    "from_confidence": 0.62,
+    "candidate_codes": [
+      "CJ",
+      "ZA"
+    ],
+    "reason": "箭头区域可见管底暗色淤积/块状物，但形态不够清晰，难以判断是连续、低位、平缓的沉积层，还是局部块状障碍物；存在 CJ/ZA 冲突，当前 CJ 证据不足。"
+  }
+}

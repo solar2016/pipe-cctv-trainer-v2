@@ -1,0 +1,67 @@
+{
+  "id": "manual_20260522_135434",
+  "label": "manual",
+  "timestamp": "2026-05-22T13:54:34",
+  "result": {
+    "total": 18,
+    "code_hits": 0,
+    "grade_hits": 4,
+    "unknowns": 12,
+    "code_accuracy": 0.0,
+    "grade_accuracy": 0.2222,
+    "grade_within_one_accuracy": 0.2778,
+    "unknown_rate": 0.6667,
+    "per_code": {
+      "CW": {
+        "total": 3,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 1
+      },
+      "ZA": {
+        "total": 8,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 5
+      },
+      "SG": {
+        "total": 5,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 5
+      },
+      "PL": {
+        "total": 1,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 1
+      },
+      "BX": {
+        "total": 1,
+        "hits": 0,
+        "accuracy": 0.0,
+        "unknowns": 0
+      }
+    },
+    "confusion": {
+      "CW": {
+        "NONE": 1,
+        "UNKNOWN": 1,
+        "BX": 1
+      },
+      "ZA": {
+        "UNKNOWN": 5,
+        "JG": 3
+      },
+      "SG": {
+        "UNKNOWN": 5
+      },
+      "PL": {
+        "UNKNOWN": 1
+      },
+      "BX": {
+        "PL": 1
+      }
+    }
+  }
+}

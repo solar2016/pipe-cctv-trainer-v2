@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.25,
+        0.25,
+        0.8,
+        0.95
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "管道截面高度方向压缩，变形量约为10%-15%",
+      "defect_continuity": "连续",
+      "position_detail": "管体整体及右侧受压区",
+      "visible_features": [
+        "管体截面扁平化失圆",
+        "右侧管壁弧度异常"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D:4.73m处存在明显的结构性缺陷。检测图像显示管道材质为HDPE，管径为300mm。管道截面发生明显的竖向挤压变形，呈现扁平椭圆形，截面失圆。右侧管壁在受力处存在明显的曲率异常，初判为2级变形（BX），建议采取局部固化或开挖方式进行修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300mm",
+    "光照水位": "光照正常，无明显积水，管底微湿",
+    "整体轮廓": "管道截面明显失圆，呈现扁平的椭圆形，顶部受压下凹，两侧向外凸出",
+    "管底形态": "管底平坦，未见明显沉积物",
+    "管壁表面": "管壁表面光滑，但在变形严重区域可见受压产生的弧度异常",
+    "接口位置": "接口处随管体一同发生扁平化变形",
+    "异常细节": "管道整体发生竖向扁平化变形，右侧管壁在受压处呈现明显的曲率过渡异常，红箭头指向右侧变形边缘"
+  },
+  "scan_findings": [
+    {
+      "position": "管体整体及右侧管壁",
+      "description": "管体截面失圆扁化，右侧管壁变形凸出",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

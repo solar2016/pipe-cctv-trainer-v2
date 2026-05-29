@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "ZA",
+      "grade": 1,
+      "confidence": 0.78,
+      "name": "障碍物",
+      "category": "功能性缺陷",
+      "recommendation": "特殊疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 1,
+    "confidence": 0.72
+  },
+  "unknown_route": {
+    "routed": false,
+    "from_code": "ZA",
+    "from_grade": 1,
+    "from_confidence": 0.78,
+    "candidate_codes": [
+      "ZA"
+    ],
+    "reason": "箭头处可见管底独立块状异物/硬块，呈局部阻挡特征，不像连续平缓沉积层；图像虽有水流和反光但主缺陷证据基本可见，支持ZA初判。"
+  }
+}

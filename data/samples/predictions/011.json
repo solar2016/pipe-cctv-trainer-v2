@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 4,
+      "confidence": 0.82,
+      "visible_features": [
+        "管道内壁大面积灰白色附着物覆盖",
+        "顶部及侧壁可见厚层结垢和下垂状附着物",
+        "过水断面被明显压缩，断面损失较大",
+        "红色箭头指向区域附近为附着在管壁上的块状结垢/垢体"
+      ],
+      "recommendation": "清洗或疏通处理",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示管道内壁存在明显大面积结垢，顶部、侧壁及箭头指向区域可见灰白色厚层附着物和块状垢体，已造成较明显的过水断面损失，初判为重度结垢。管底同时可见一定沉积物，建议清洗疏通并进行人工复核确认。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 2, 'confidence': 0.55, 'visible_features': ['管底可见连续低位泥沙或淤积物', '底部过水空间变窄'], 'recommendation': '疏通处理'}"
+  ],
+  "review_stage": "first_pass"
+}

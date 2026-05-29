@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.21,
+        0.21,
+        0.77,
+        0.88
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "脱节间隙约占管壁厚度的一半到一倍之间",
+      "defect_continuity": "连续",
+      "position_detail": "管道中部环形接口",
+      "visible_features": [
+        "管道端部脱开",
+        "可见环向接口间隙"
+      ],
+      "recommendation": "局部现场固化法修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在检测位置发现一处中度脱节（TJ）缺陷，表现为接口处两端管道未充分接合，存在明显的环向脱开间隙，建议结合实际情况进行局部修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照，低水位，管内有白色雾气/水汽",
+    "整体轮廓": "截面呈圆形，管壁轮廓基本正常",
+    "管底形态": "管底有水流，未见明显异常堆积",
+    "管壁表面": "管壁较平整，受雾气影响局部能见度受限",
+    "接口位置": "画面中前部有一处环向管道接口，接口处可见明显的环向脱开间隙",
+    "异常细节": "红色箭头指向环形接口，可见管道端部未充分接合，存在明显的纵向脱开间隙"
+  },
+  "scan_findings": [
+    {
+      "position": "管道中部接口处",
+      "description": "管道接口环向脱开间隙",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

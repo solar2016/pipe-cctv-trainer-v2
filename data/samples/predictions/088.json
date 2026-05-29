@@ -1,0 +1,77 @@
+{
+  "defects": [
+    {
+      "code": "JG",
+      "name": "结垢",
+      "grade": 1,
+      "confidence": 0.85,
+      "bbox": [
+        0.68,
+        0.0,
+        0.82,
+        0.28
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.1,
+      "defect_ratio_desc": "缺陷约占管壁局部区域的10%",
+      "defect_continuity": "孤立",
+      "position_detail": "右上侧管壁",
+      "visible_features": [
+        "白色片状结垢物，与管壁融为一体"
+      ],
+      "recommendation": "化学清洗或高压冲洗",
+      "category": "功能性缺陷"
+    },
+    {
+      "code": "SL",
+      "name": "渗漏",
+      "grade": 2,
+      "confidence": 0.82,
+      "bbox": [
+        0.55,
+        0.58,
+        0.65,
+        0.72
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.05,
+      "defect_ratio_desc": "缺陷局限于接口处",
+      "defect_continuity": "孤立",
+      "position_detail": "右下侧接口处",
+      "visible_features": [
+        "接口缝隙处有明显的滴水或渗水痕迹"
+      ],
+      "recommendation": "进行防渗堵漏修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该HDPE管道在检测中发现两处缺陷：右上侧存在局部白色结垢（JG），右下方接口环缝处存在明显的渗漏（SL）现象。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面基本呈圆形",
+    "管底形态": "管底有水流，无明显沉积物",
+    "管壁表面": "右上侧管壁有白色附着物（结垢），与管壁紧密结合",
+    "接口位置": "右下方接口位置有明显的液体渗出或积水滴落现象",
+    "异常细节": "右上侧有明显的片状白色结垢物，右下侧接口环缝处有渗漏水迹象"
+  },
+  "scan_findings": [
+    {
+      "position": "右上侧管壁",
+      "description": "白色片状附着物",
+      "confidence_level": "high"
+    },
+    {
+      "position": "右下侧接口处",
+      "description": "接口有渗水迹象",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

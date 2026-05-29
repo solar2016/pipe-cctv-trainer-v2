@@ -1,0 +1,33 @@
+{
+  "focus_dimensions": [
+    {
+      "dimension": "confusion",
+      "severity": "high",
+      "affected_codes": [
+        "ZA",
+        "CJ",
+        "BX",
+        "TJ"
+      ],
+      "evidence": "ZA（障碍）与 CJ（沉积）存在严重的双向混淆，其中 ZA→CJ 达 14 次，CJ→ZA 为 4 次；同时 BX（变形）与 TJ（脱节）也存在明显混淆（BX→TJ 7次，TJ→BX 3次）。",
+      "strategy": "在 Prompt 中引入『易混淆缺陷辨析指南』：1. 明确区分 ZA（外来侵入物、树根等阻碍性障碍）与 CJ（管底淤泥、油脂等沉积堆积物）的物理与视觉特征差异；2. 阐明 BX（管身受压形变）与 TJ（管口接头错位、脱落）的判定边界；3. 针对这两组混淆类型，各补充一组对比性的 Few-Shot 示例。",
+      "expected_impact": "大幅减少 ZA 与 CJ、BX 与 TJ 之间的误判，提升这四个类别的精确率与 F1 值，从而将整体 F1 提升至 0.55 以上。"
+    },
+    {
+      "dimension": "low_recall",
+      "severity": "high",
+      "affected_codes": [
+        "TG",
+        "ZA",
+        "TJ"
+      ],
+      "evidence": "TG 召回率为 0.000（5个样本无一检出，其中3个被误判为 UNKNOWN）；最大样本类 ZA（支持度48）的召回率仅为 0.479，存在大量漏检；TJ 召回率也仅为 0.250。",
+      "strategy": "1. 补充 TG 的定义与核心视觉特征（如金属加固环、特殊修复结构），并在 Few-Shot 中新增 TG 的标准正例；2. 优化 UNKNOWN 判定规则，限制模型在遇到不确定特征时轻易归类为 UNKNOWN，强制其比对已知缺陷特征；3. 细化 ZA 的触发条件，强调任何非管道自身结构且影响过水断面的物体均应优先识别为 ZA。",
+      "expected_impact": "攻克 TG 零召回的瓶颈，将 ZA 的召回率提升至 0.70 以上，显著降低系统的漏检率。"
+    }
+  ],
+  "summary": "重点解决 ZA 与 CJ、BX 与 TJ 的混淆问题，并针对 TG 和 ZA 补充特征定义与正例以解决高漏检问题。",
+  "skip_optimization": false,
+  "skip_reason": "",
+  "report_id": "ui_test_20260528_175643"
+}

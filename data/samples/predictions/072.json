@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头区域可见管底有块状/团状杂物与泥沙、细丝状物混合，图像较模糊，无法明确判断为独立障碍物，还是连续沉积或树根/杂物混合，应人工复核。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头区域可见管底有块状/团状杂物与泥沙、细丝状物混合，图像较模糊，无法明确判断为独立障碍物，还是连续沉积或树根/杂物混合，应人工复核。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 3,
+    "confidence": 0.78
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "ZA",
+    "from_grade": 3,
+    "from_confidence": 0.72,
+    "candidate_codes": [
+      "ZA",
+      "CJ",
+      "SG"
+    ],
+    "reason": "箭头区域可见管底有块状/团状杂物与泥沙、细丝状物混合，图像较模糊，无法明确判断为独立障碍物，还是连续沉积或树根/杂物混合，应人工复核。"
+  }
+}

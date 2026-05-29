@@ -1,0 +1,6 @@
+{
+  "sample_id": "024",
+  "anchor_type": "positive",
+  "target_code": "BX",
+  "note": "AI正确识别，置信度68%，场景：变形、管状、壁面，质量A级"
+}

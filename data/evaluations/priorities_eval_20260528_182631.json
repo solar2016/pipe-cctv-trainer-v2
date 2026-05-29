@@ -1,0 +1,34 @@
+{
+  "focus_dimensions": [
+    {
+      "dimension": "confusion",
+      "severity": "high",
+      "affected_codes": [
+        "ZA",
+        "CJ",
+        "BX",
+        "TJ"
+      ],
+      "evidence": "ZA被误判为CJ达14次，BX被误判为TJ达7次，CJ与ZA互混4次。这表明系统在区分“障碍物(ZA)与沉积物(CJ)”以及“变形(BX)与脱节(TJ)”的视觉特征上存在严重模糊。",
+      "strategy": "在Prompt中补充ZA与CJ的对比定义（如：ZA通常为外来块状孤立物，CJ为连续性积泥/砂），以及BX与TJ的区分特征（BX为管径几何形变，TJ为管口连接处错位）。为这两组易混淆类别各提供2-3组典型的Few-Shot对比示例。",
+      "expected_impact": "显著降低ZA->CJ和BX->TJ的误判率，提升ZA、CJ、BX、TJ的F1-score，预计宏平均F1可提升0.1以上。"
+    },
+    {
+      "dimension": "overconfident",
+      "severity": "high",
+      "affected_codes": [
+        "ZA",
+        "TG",
+        "TJ",
+        "QF"
+      ],
+      "evidence": "系统过度自信率高达37.4% (43/115)，同时TG(F1=0.000)、TJ(F1=0.133)等类别召回率极低，说明系统在特征不明确时仍给出了高置信度的错误预测。",
+      "strategy": "引入置信度校准机制。在Prompt中增加“无法确定时输出UNKNOWN”的惩罚性规则，并细化置信度打分标准（例如：必须列举出至少2个显性病害特征才能给出0.8以上置信度，否则强制降权）。",
+      "expected_impact": "降低过度自信率至15%以下，提高系统输出的可靠性，迫使不确定样本流向UNKNOWN或低置信度区间。"
+    }
+  ],
+  "summary": "重点解决ZA与CJ、BX与TJ的类别混淆问题，并通过细化置信度打分规则来抑制高达37.4%的过度自信率。",
+  "skip_optimization": false,
+  "skip_reason": "",
+  "report_id": "eval_20260528_182631"
+}

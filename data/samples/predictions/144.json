@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 1,
+      "confidence": 0.62,
+      "visible_features": [
+        "红色箭头指向管壁局部可见细线状裂痕/暗色裂缝痕迹",
+        "未见明显张开间隙、破碎脱落或坍塌，管道整体形状基本保持"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "低",
+  "report_text": "该管段图像显示，红色箭头标注区域的管壁存在疑似细线状裂痕，符合PL破裂中1级裂痕的可见特征；目前未见明显裂口张开、破碎脱落或大范围坍塌。受图像雾化影响，建议人工复核确认裂痕连续性及实际范围。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "图像存在雾化/水汽干扰，局部细节清晰度不足",
+    "管底可见少量泥沙或污物，但厚度较小，暂不作为主要缺陷判定"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

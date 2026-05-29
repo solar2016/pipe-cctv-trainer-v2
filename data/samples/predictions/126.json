@@ -1,0 +1,53 @@
+{
+  "defects": [
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.65,
+        0.1,
+        0.95,
+        0.9
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.15,
+      "defect_ratio_desc": "脱节缝隙约占右侧接口局部区域",
+      "defect_continuity": "连续",
+      "position_detail": "右侧接口处",
+      "visible_features": [
+        "管道接口端部未充分接合",
+        "存在明显的环向拉开间隙"
+      ],
+      "recommendation": "建议进行局部注浆或套筒修复，防止外界泥沙渗入",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该DN500 HDPE雨水管段在检测位置（D: 6.48m）处，右侧管道接口存在脱节现象。现场图像显示，两根管道的端部未充分接合，接口处有明显的环向脱开间隙，脱节距离约为管壁厚度的1/2至1倍，判定为TJ（脱节）2级。右上方另见一处圆形模糊暗影，初步判定为镜头水滴，不影响结构安全。建议对该脱节接口进行局部修复处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN500",
+    "光照水位": "光照正常，低水位",
+    "整体轮廓": "截面呈圆形，管体未见明显变形",
+    "管底形态": "管底有少量流动清水，无明显沉积物",
+    "管壁表面": "管壁表面较光滑，右上方有一处圆形模糊暗影，疑似镜头水滴或污渍",
+    "接口位置": "右侧可见一处管道接口，接口处存在环向缝隙，管道端部未充分接合",
+    "异常细节": "红色箭头指示的右侧管道接口处，两节管段连接处出现环向拉开的间隙，间隙宽度目测在管壁厚度的1/2至1倍之间"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧接口",
+      "description": "管道接口环向脱开间隙",
+      "confidence_level": "high"
+    },
+    {
+      "position": "右上方管壁/镜头",
+      "description": "圆形模糊暗影，疑似镜头水滴",
+      "confidence_level": "low"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass"
+}

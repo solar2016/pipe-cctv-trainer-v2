@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头附近可见少量细丝状/枝条状暗线，但较分散且与泥沙、杂物混杂，未能清楚确认是否为自然生长进入管道的树根群；存在 SG 与 ZA/CJ 混淆风险，证据不足，建议人工复核。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头附近可见少量细丝状/枝条状暗线，但较分散且与泥沙、杂物混杂，未能清楚确认是否为自然生长进入管道的树根群；存在 SG 与 ZA/CJ 混淆风险，证据不足，建议人工复核。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 1,
+    "confidence": 0.55
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "SG",
+    "from_grade": 1,
+    "from_confidence": 0.62,
+    "candidate_codes": [
+      "SG",
+      "ZA",
+      "CJ"
+    ],
+    "reason": "箭头附近可见少量细丝状/枝条状暗线，但较分散且与泥沙、杂物混杂，未能清楚确认是否为自然生长进入管道的树根群；存在 SG 与 ZA/CJ 混淆风险，证据不足，建议人工复核。"
+  }
+}

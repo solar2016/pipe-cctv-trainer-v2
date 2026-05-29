@@ -1,0 +1,59 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.95,
+      "bbox": [
+        0.35,
+        0.28,
+        0.66,
+        0.55
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.5,
+      "defect_ratio_desc": "变形导致管道垂直方向截面高度损失超过50%",
+      "defect_continuity": "孤立",
+      "position_detail": "管道中上部",
+      "visible_features": [
+        "管顶明显向下凹陷",
+        "管道截面严重压扁",
+        "过流断面严重损失"
+      ],
+      "recommendation": "由于变形极其严重（4级），建议采取开挖修复或局部管道更新",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该HDPE排水管道（DN150）在W212-W211区间检测中发现严重的结构性缺陷。管道中上部管体受外力挤压发生严重变形（BX），管顶大面积向下凹陷塌扁，导致管道过水断面损失超过50%，判定为4级变形。此缺陷已严重影响管道的排水能力，并导致管内严重积水。建议尽快安排开挖修复，避免管道完全坍塌堵塞。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE（塑料）管，管径150mm",
+    "光照水位": "光照正常，高水位，管道内部积水严重",
+    "整体轮廓": "截面严重失圆，管体上方明显向下凹陷变形，呈扁平状，过流通道被严重压缩",
+    "管底形态": "管底完全被积水淹没，无法清晰观察管底沉积情况",
+    "管壁表面": "管壁上方可见明显的向内弯曲挤压变形轮廓",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "管道中上部管壁受外力挤压严重向下凹陷，导致原本圆形的管道截面被压扁，高度损失估计超过50%，仅剩上方狭窄的半月形空间，且伴有严重积水。"
+  },
+  "scan_findings": [
+    {
+      "position": "管道中上部",
+      "description": "管体严重向内挤压变形，截面呈扁平状",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 4,
+    "from_confidence": 0.95,
+    "candidate_codes": [
+      "BX"
+    ],
+    "reason": "图中HDPE管道顶部发生极明显的向下挤压凹陷，管体截面严重变形，过水断面损失巨大。该变形特征非常典型且清晰可见，完全支持BX（变形）的诊断。"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "sample_id": "084",
+  "anchor_type": "hard",
+  "target_code": "BX",
+  "note": "AI误判为UNKNOWN（置信度40%），场景：变形、壁面、顶部"
+}

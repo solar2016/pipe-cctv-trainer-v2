@@ -1,0 +1,21 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 2,
+      "confidence": 0.84,
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": "疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 2,
+    "confidence": 0.78
+  }
+}

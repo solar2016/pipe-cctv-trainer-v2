@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.72,
+      "visible_features": [
+        "管壁上部可见纵向裂口或撕裂痕迹",
+        "裂口附近有片状材料翘起/下垂，管壁连续性受破坏",
+        "箭头指向区域存在局部开裂及不规则边缘"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示管壁上部及箭头指向区域存在明显裂口、撕裂及局部片状材料翘起，符合破裂特征；管道底部另有少量低位沉积。建议人工复核裂口范围及是否伴随变形后确定修复方案。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 1, 'confidence': 0.45, 'visible_features': ['管底可见少量泥沙或淤积物，厚度较低'], 'recommendation': '疏通处理'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 6
+}

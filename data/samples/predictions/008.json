@@ -1,0 +1,54 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.15,
+        0.75,
+        0.45
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.25,
+      "defect_ratio_desc": "破裂及剥离区域约占管顶画面的25%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶中部",
+      "visible_features": [
+        "管壁材质断开且不连续",
+        "明显的横向裂口和层状剥离",
+        "伴随局部挤压变形"
+      ],
+      "recommendation": "建议进行管道内衬修复或局部开挖修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该HDPE管段在D:16.21m处，管顶发生严重的结构性破裂（PL），等级为3级。管壁材质出现横向断裂、层状剥离，并伴有局部挤压变形。破口处可见垂落物。建议尽快安排修复，防止病害进一步恶化导致管道塌方。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "管顶截面变形，管壁轮廓线不连续且有缺口",
+    "管底形态": "管底未见明显异常堆积",
+    "管壁表面": "管顶处管壁材料出现明显的横向断裂、撕裂和剥离，伴有条状物垂落",
+    "接口位置": "非接口处的管身段发生异常",
+    "异常细节": "管顶局部区域管壁发生严重挤压破裂，塑料材质出现多道横向裂缝和层状剥离，部分破损边缘有纤维状或树根状物体垂落"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶",
+      "description": "管壁材料横向破裂与剥离",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [
+    "{'position': '管顶破裂处', 'description': '破口处有疑似树根或撕裂的管道材质纤维垂落'}"
+  ],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

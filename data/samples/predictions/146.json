@@ -1,0 +1,53 @@
+{
+  "defects": [
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.11,
+        0.2,
+        0.92,
+        0.85
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "脱节缝隙贯穿整个管口周长，影响显著",
+      "defect_continuity": "孤立",
+      "position_detail": "前景管接口处",
+      "visible_features": [
+        "接口处纵向拉开",
+        "两节管端明显脱开并露出缝隙"
+      ],
+      "recommendation": "进行局部非开挖修复或接口注浆修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在 D:8.52m 处接口存在明显的脱节现象，管口纵向脱开，形成环向缝隙，建议及时进行修复处理，防止泥砂进入或污水外渗。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径 300mm",
+    "光照水位": "正常光照，低水位，水面有较多白色泡沫状浮渣",
+    "整体轮廓": "截面基本呈圆形，管壁未见明显变形",
+    "管底形态": "管底有积水，水流表面有白色漂浮物",
+    "管壁表面": "管壁表面平整，未见明显破裂或腐蚀",
+    "接口位置": "前景处的管段接口存在明显的纵向分离，管端脱开，形成环向缝隙",
+    "异常细节": "前景管口与下一节管子之间纵向脱开，两侧红箭头指向脱开的缝隙处，右侧缝隙处可见明显的管口边缘和缝隙空间"
+  },
+  "scan_findings": [
+    {
+      "position": "前景管接口处",
+      "description": "管口纵向脱开，形成明显的环向缝隙",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [
+    "{'position': '水面', 'description': '水面有较多白色浮渣/泡沫', 'possible_defect_code': 'FZ'}"
+  ],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

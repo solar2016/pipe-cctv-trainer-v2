@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "SG",
+      "grade": 3,
+      "confidence": 0.95,
+      "description": "树根群侵入管道，过水面积损失量估计在15%~30%之间，属于3级树根缺陷",
+      "name": "树根",
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material_and_diameter": "HDPE双壁波纹管，管径300mm",
+    "lighting_and_water_level": "光照前强后弱，管道底部有低水位积水",
+    "overall_contour": "管壁波纹结构清晰，整体轮廓基本保持圆形，无明显整体变形",
+    "pipe_bottom_status": "管底左侧有大量黑色堆积物，影响水流",
+    "pipe_wall_surface": "左侧管壁有黑褐色网状及丝状植物根系延伸出来",
+    "joint_positions": "未见明显接口异常，但波纹管壁缝隙处有树根穿透侵入",
+    "abnormal_area_details": "红色箭头指向位置有一团密集的、呈网状交织的黑褐色树根群，从管道左侧壁缝隙侵入并向管底延伸堆积，明显阻碍了过水断面"
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 3,
+    "confidence": 0.92
+  }
+}

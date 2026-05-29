@@ -1,0 +1,52 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 2,
+      "confidence": 0.82,
+      "bbox": [
+        0.03,
+        0.45,
+        0.55,
+        0.9
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.25,
+      "defect_ratio_desc": "错位缺陷影响了约25%的接口断面区域",
+      "defect_continuity": "孤立",
+      "position_detail": "左下方接口",
+      "visible_features": [
+        "接口处横向偏离",
+        "错台明显",
+        "管口不连续"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该DN200混凝土污水管道在W43-W45段检测中，发现左下方接口处存在明显的错位（CW）缺陷，两个管口产生横向偏离并形成错台，错位间距约在管壁厚度的1/2至1倍之间，评定为2级中度错位。同时，错位缝隙处伴有渗漏（SL）现象。建议采用局部现场固化法进行修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "混凝土管，约 DN200",
+    "光照水位": "正常光照，中水位",
+    "整体轮廓": "截面在接口位置发生中断，中心线不连续",
+    "管底形态": "管底有水流，右侧有少量黄色附着",
+    "管壁表面": "管壁表面有磨损及轻微结垢，图像右侧边缘略显模糊",
+    "接口位置": "左下方接口处两管口未对准，存在明显的错台和偏离",
+    "异常细节": "红色箭头指向的左下侧接口位置，两个管口产生明显的横向和径向偏离，形成错台，且错位缝隙处有明显的渗水和反光现象"
+  },
+  "scan_findings": [
+    {
+      "position": "左下方接口处",
+      "description": "管口错开，中心线不连续，伴有渗水",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [
+    "{'code': 'SL', 'name': '渗漏', 'description': '错位缝隙处可见水流滴漏或渗入'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

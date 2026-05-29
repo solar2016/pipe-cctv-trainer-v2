@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.78,
+      "visible_features": [
+        "红色箭头指向区域可见管壁破裂后形成的明显裂口和翻卷片状破损",
+        "管壁局部有破碎、脱落迹象，管道内壁连续性被破坏",
+        "破损处导致管内轮廓异常，局部断面受影响"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像中，红色箭头所指区域可见 HDPE 管壁明显破裂，局部管壁呈片状翻卷、破碎并侵入管内，管壁连续性遭到破坏，符合破裂类结构性缺陷特征。破损区域同时伴随局部内凹和管形异常，存在一定变形表现。建议进行人工复核，并优先考虑局部现场固化修复或开挖处理。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'BX', 'name': '变形', 'grade': 3, 'confidence': 0.62, 'visible_features': ['破损区域附近管壁出现明显内翻和局部内凹', '管体局部轮廓不连续，存在较明显形状变异'], 'recommendation': '局部现场固化法修复或开挖处理'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

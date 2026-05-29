@@ -1,0 +1,25 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.82,
+      "visible_features": [
+        "红色箭头指向右侧管壁可见明显裂口/破损区域",
+        "局部管壁疑似破碎脱落形成孔洞状缺口",
+        "破损范围为局部区域，未见环向大范围坍塌"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段图像显示右侧管壁存在明显局部破损，红色箭头所指区域可见裂口及疑似管壁脱落形成的孔洞，符合破裂类结构性缺陷特征，初判为PL破裂3级。管底另可见少量泥沙碎屑沉积，作为次要观察项。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 1, 'confidence': 0.45, 'visible_features': ['管底可见少量泥沙、碎屑状沉积物'], 'recommendation': '疏通处理'}"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

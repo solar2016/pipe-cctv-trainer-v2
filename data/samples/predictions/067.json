@@ -1,0 +1,24 @@
+{
+  "defects": [
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.62,
+      "visible_features": [
+        "红色箭头指向接口附近，可见管道端部接合不连续",
+        "接口处存在明显环向缝隙/暗缝，局部可见泥沙或杂质进入迹象",
+        "相邻管段边缘不平顺，疑似接口脱开"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示红色箭头所指接口区域存在接合不连续和缝隙，局部疑似泥沙进入，初判为中度脱节。管底另见少量沉积物，程度较轻。受图像清晰度和视角限制，建议人工复核确认接口脱节距离及是否伴随错位或渗漏。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "{'code': 'CJ', 'name': '沉积', 'grade': 1, 'confidence': 0.45, 'visible_features': ['管底可见少量泥沙/杂质堆积，但厚度较小'], 'recommendation': '疏通处理'}"
+  ],
+  "review_stage": "first_pass"
+}

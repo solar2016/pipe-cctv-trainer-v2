@@ -1,0 +1,88 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 4,
+      "confidence": 0.95,
+      "bbox": [
+        0.35,
+        0.1,
+        0.75,
+        0.55
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.45,
+      "defect_ratio_desc": "变形塌陷区域约占管道过水断面的45%",
+      "defect_continuity": "连续",
+      "position_detail": "管顶中部",
+      "visible_features": [
+        "管顶严重内凹",
+        "截面扁化失圆"
+      ],
+      "recommendation": "建议开挖重建",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.52,
+        0.34,
+        0.73,
+        0.54
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.2,
+      "defect_ratio_desc": "破裂露骨料区域占局部画面约20%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶偏右侧",
+      "visible_features": [
+        "管壁断裂",
+        "露出外部回填碎石"
+      ],
+      "recommendation": "建议开挖重建",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "检测图像显示，该HDPE管段（DN300）存在严重的结构性缺陷。管顶受到严重外力挤压导致下凹变形，变形量已超过管径的25%（4级变形），同时伴随管壁破裂，破裂处已明显露出外部回填碎石层（3级破裂）。该处结构已失去承载能力，随时有塌方危险，建议立即采取开挖手段进行管道重建。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE塑料管，管径 300mm",
+    "光照水位": "正常光照，低水位，管底有积水",
+    "整体轮廓": "截面严重变形失圆，管顶中部严重向下凹陷塌落，过水断面极度萎缩",
+    "管底形态": "因上方管壁严重下凹，管底过流通道变窄且不平整",
+    "管壁表面": "白色管壁发生严重挤压变形，右侧可见管壁破裂，露出灰褐色碎石及混凝土层",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "管顶严重下凹变形，变形量明显大于管道直径的25%；变形处管壁破裂，露出外部坚硬的回填碎石及泥土结构"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶及整体",
+      "description": "管体受压严重变形下凹",
+      "confidence_level": "high"
+    },
+    {
+      "position": "管顶偏右侧",
+      "description": "管壁破裂并露出外部碎石结构",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8,
+  "unknown_route": {
+    "routed": false,
+    "from_code": "BX",
+    "from_grade": 4,
+    "from_confidence": 0.95,
+    "candidate_codes": [
+      "BX",
+      "PL"
+    ],
+    "reason": "图像中HDPE管道受到严重外力挤压，管体截面极度失圆、扁化并向内凹陷折叠，变形量显然已超过25%，符合变形（BX）的典型特征。同时，变形严重处伴随有管壁破裂（PL）露出外部介质。主判断BX的证据非常充分。"
+  }
+}

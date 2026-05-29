@@ -1,0 +1,38 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.68,
+      "visible_features": [
+        "红色箭头指向管道上部内壁，可见局部暗色裂口或开裂痕迹",
+        "裂缝处呈线状/不规则开口，疑似管壁破裂形成间隙",
+        "未见大范围坍塌，管道整体轮廓基本仍可辨"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "grade": 1,
+      "confidence": 0.52,
+      "visible_features": [
+        "管底可见低位泥沙或淤积物",
+        "沉积厚度较薄，估计小于管径5%"
+      ],
+      "recommendation": "疏通处理",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示，红色箭头指向的管道上部内壁存在疑似破裂特征，可见暗色线状或不规则裂口，局部可能已形成间隙，但未见明显大范围坍塌，初判为PL破裂2级。同时管底可见少量泥沙沉积，程度较轻，初判为CJ沉积1级。受图像清晰度和雾化影响，建议人工结合视频连续帧复核确认。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "图像存在一定雾化和光照不均，局部细节不够清晰",
+    "管内为HDPE管，箭头附近疑似结构性开裂，建议结合视频前后帧复核"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 2
+}

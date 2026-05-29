@@ -1,0 +1,321 @@
+{
+  "evaluation_id": "eval_20260528_180900",
+  "evaluation_time": "",
+  "prompt_version": "",
+  "total_samples": 210,
+  "predicted_samples": 0,
+  "confusion_matrix": {
+    "CW": {
+      "NONE": 1,
+      "CW": 7,
+      "JG": 2,
+      "TJ": 1,
+      "JK": 1,
+      "PL": 1
+    },
+    "ZA": {
+      "JG": 4,
+      "CJ": 14,
+      "SG": 1,
+      "ZA": 23,
+      "UNKNOWN": 4,
+      "FZ": 2
+    },
+    "SG": {
+      "SG": 7,
+      "TJ": 1,
+      "CW": 1,
+      "SL": 1,
+      "JG": 1,
+      "UNKNOWN": 3
+    },
+    "PL": {
+      "BX": 1,
+      "PL": 33,
+      "SG": 2,
+      "JK": 1,
+      "UNKNOWN": 3,
+      "JG": 1,
+      "AJ": 2
+    },
+    "BX": {
+      "BX": 33,
+      "TJ": 7,
+      "ZA": 1,
+      "PL": 1,
+      "CW": 1
+    },
+    "CJ": {
+      "CJ": 18,
+      "ZA": 4,
+      "UNKNOWN": 2
+    },
+    "TJ": {
+      "BX": 3,
+      "TJ": 1
+    },
+    "JG": {
+      "JG": 1
+    },
+    "TG": {
+      "UNKNOWN": 3,
+      "CW": 1,
+      "TJ": 1
+    },
+    "QF": {
+      "BX": 1
+    },
+    "AJ": {
+      "AJ": 3,
+      "ZA": 1
+    }
+  },
+  "metrics": {
+    "AJ": {
+      "tp": 3,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1": 0.667,
+      "support": 4
+    },
+    "BX": {
+      "tp": 33,
+      "fp": 5,
+      "fn": 10,
+      "precision": 0.868,
+      "recall": 0.767,
+      "f1": 0.815,
+      "support": 43
+    },
+    "CJ": {
+      "tp": 18,
+      "fp": 14,
+      "fn": 6,
+      "precision": 0.562,
+      "recall": 0.75,
+      "f1": 0.643,
+      "support": 24
+    },
+    "CW": {
+      "tp": 7,
+      "fp": 3,
+      "fn": 6,
+      "precision": 0.7,
+      "recall": 0.538,
+      "f1": 0.609,
+      "support": 13
+    },
+    "FZ": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "JG": {
+      "tp": 1,
+      "fp": 8,
+      "fn": 0,
+      "precision": 0.111,
+      "recall": 1.0,
+      "f1": 0.2,
+      "support": 1
+    },
+    "JK": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "NONE": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "PL": {
+      "tp": 33,
+      "fp": 2,
+      "fn": 10,
+      "precision": 0.943,
+      "recall": 0.767,
+      "f1": 0.846,
+      "support": 43
+    },
+    "QF": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "support": 1
+    },
+    "SG": {
+      "tp": 7,
+      "fp": 3,
+      "fn": 7,
+      "precision": 0.7,
+      "recall": 0.5,
+      "f1": 0.583,
+      "support": 14
+    },
+    "SL": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "TG": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "support": 5
+    },
+    "TJ": {
+      "tp": 1,
+      "fp": 10,
+      "fn": 3,
+      "precision": 0.091,
+      "recall": 0.25,
+      "f1": 0.133,
+      "support": 4
+    },
+    "UNKNOWN": {
+      "tp": 0,
+      "fp": 15,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "ZA": {
+      "tp": 23,
+      "fp": 6,
+      "fn": 25,
+      "precision": 0.793,
+      "recall": 0.479,
+      "f1": 0.597,
+      "support": 48
+    },
+    "macro_avg": {
+      "precision": 0.488,
+      "recall": 0.527,
+      "f1": 0.463,
+      "accuracy": 0.63
+    }
+  },
+  "confusion_pairs": [
+    {
+      "true_code": "ZA",
+      "pred_code": "CJ",
+      "count": 14,
+      "description": "ZA 被误判为 CJ (14次)"
+    },
+    {
+      "true_code": "BX",
+      "pred_code": "TJ",
+      "count": 7,
+      "description": "BX 被误判为 TJ (7次)"
+    },
+    {
+      "true_code": "ZA",
+      "pred_code": "JG",
+      "count": 4,
+      "description": "ZA 被误判为 JG (4次)"
+    },
+    {
+      "true_code": "ZA",
+      "pred_code": "UNKNOWN",
+      "count": 4,
+      "description": "ZA 被误判为 UNKNOWN (4次)"
+    },
+    {
+      "true_code": "CJ",
+      "pred_code": "ZA",
+      "count": 4,
+      "description": "CJ 被误判为 ZA (4次)"
+    },
+    {
+      "true_code": "SG",
+      "pred_code": "UNKNOWN",
+      "count": 3,
+      "description": "SG 被误判为 UNKNOWN (3次)"
+    },
+    {
+      "true_code": "PL",
+      "pred_code": "UNKNOWN",
+      "count": 3,
+      "description": "PL 被误判为 UNKNOWN (3次)"
+    },
+    {
+      "true_code": "TJ",
+      "pred_code": "BX",
+      "count": 3,
+      "description": "TJ 被误判为 BX (3次)"
+    },
+    {
+      "true_code": "TG",
+      "pred_code": "UNKNOWN",
+      "count": 3,
+      "description": "TG 被误判为 UNKNOWN (3次)"
+    },
+    {
+      "true_code": "CW",
+      "pred_code": "JG",
+      "count": 2,
+      "description": "CW 被误判为 JG (2次)"
+    },
+    {
+      "true_code": "ZA",
+      "pred_code": "FZ",
+      "count": 2,
+      "description": "ZA 被误判为 FZ (2次)"
+    },
+    {
+      "true_code": "PL",
+      "pred_code": "SG",
+      "count": 2,
+      "description": "PL 被误判为 SG (2次)"
+    },
+    {
+      "true_code": "PL",
+      "pred_code": "AJ",
+      "count": 2,
+      "description": "PL 被误判为 AJ (2次)"
+    },
+    {
+      "true_code": "CJ",
+      "pred_code": "UNKNOWN",
+      "count": 2,
+      "description": "CJ 被误判为 UNKNOWN (2次)"
+    }
+  ],
+  "extended": {
+    "overconfident_rate": 0.374,
+    "overconfident_wrong": 43,
+    "overconfident_total": 115,
+    "unknown_rate": 0.09,
+    "unknown_count": 19,
+    "co_occurrence_miss_rate": 0.0,
+    "multi_defect_candidates": 16
+  },
+  "summary": "总体准确率: 63.0%\n宏平均 F1: 0.463\n过度自信率: 37.4% (43/115)\nUNKNOWN 率: 9.0%\n\n主要混淆问题 (14对):\n  - ZA 被误判为 CJ (14次)\n  - BX 被误判为 TJ (7次)\n  - ZA 被误判为 JG (4次)\n  - ZA 被误判为 UNKNOWN (4次)\n  - CJ 被误判为 ZA (4次)\n\n需要改进的类别 (F1 < 0.6):\n  - QF: F1=0.000, 召回率=0.000\n  - TG: F1=0.000, 召回率=0.000\n  - TJ: F1=0.133, 召回率=0.250\n  - JG: F1=0.200, 召回率=1.000\n  - SG: F1=0.583, 召回率=0.500\n  - ZA: F1=0.597, 召回率=0.479"
+}

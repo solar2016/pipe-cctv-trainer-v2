@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.9,
+      "bbox": [
+        0.38,
+        0.25,
+        0.72,
+        0.55
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.25,
+      "defect_ratio_desc": "变形程度约占管道直径的15%-25%",
+      "defect_continuity": "连续",
+      "position_detail": "管顶偏右",
+      "visible_features": [
+        "管体截面失圆",
+        "管顶局部内凹",
+        "管壁轮廓连续变形"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段在D:6.43m处，HDPE管道顶部发生严重变形（BX），管体截面失圆并向内凹陷，变形量估算在15%-25%之间（3级），严重影响管道过水断面，建议及时进行修复处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，DN300",
+    "光照水位": "光照正常，有轻微雾气，低水位",
+    "整体轮廓": "管体截面严重失圆，顶部向内塌陷，呈扁平状态",
+    "管底形态": "管底可见少量积水，无大面积沉积",
+    "管壁表面": "管壁上方发生明显的局部内凹变形",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "红色箭头指向的管顶偏右侧区域发生严重的向内凹陷，导致管道截面高度明显缩减，轮廓不连续"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶偏右",
+      "description": "管壁向内严重凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

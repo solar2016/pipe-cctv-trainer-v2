@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "CW",
+      "name": "错位",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.32,
+        0.26,
+        0.49,
+        0.85
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "错位缺陷影响接口约30%的环向区域",
+      "defect_continuity": "孤立",
+      "position_detail": "接口右下侧",
+      "visible_features": [
+        "同一接口的两个管口产生横向偏离",
+        "接口处中心线不连续，形成明显错台"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在接口处存在中度错位（CW）缺陷，两个管口横向偏离，形成明显错台，建议进行局部修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "混凝土管，DN200",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面基本呈圆形",
+    "管底形态": "管底有微量水流，未见严重沉积",
+    "管壁表面": "管壁表面有轻微磨损和污渍附着",
+    "接口位置": "接口处存在明显的错台现象，两侧管口未完全对齐",
+    "异常细节": "红色箭头指向的管道接口处，前段管口与后段管口产生横向偏离，右下侧边缘可见明显的错位台阶，露出部分管壁断面"
+  },
+  "scan_findings": [
+    {
+      "position": "接口处",
+      "description": "接口管口横向偏离，呈错台状",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

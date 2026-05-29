@@ -1,0 +1,6 @@
+{
+  "sample_id": "092",
+  "anchor_type": "hard",
+  "target_code": "PL",
+  "note": "AI误判为SG（置信度82%），场景：特征不明显"
+}

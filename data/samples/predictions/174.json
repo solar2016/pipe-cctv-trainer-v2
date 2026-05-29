@@ -1,0 +1,49 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.65,
+        0.15,
+        0.85,
+        0.6
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.12,
+      "defect_ratio_desc": "变形区域内凹幅度约占管径的12%",
+      "defect_continuity": "连续",
+      "position_detail": "右侧2点至4点钟方向",
+      "visible_features": [
+        "管壁右侧波纹向内挤压凹陷",
+        "管道截面失圆"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "检测图像显示，该HDPE波纹管段在右侧管壁处发生明显的挤压变形（BX），波纹结构向内凹陷，导致管道截面局部失圆，变形量估算在5%-15%之间，评定为2级变形。建议视情况采取局部修复或开挖处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径300mm",
+    "光照水位": "光照正常，低水位，管底有少量水流",
+    "整体轮廓": "截面失圆，右侧管壁出现明显的向内凹陷变形",
+    "管底形态": "管底可见少量流动水及轻微湿润泥沙，无大面积沉积",
+    "管壁表面": "右侧管壁波纹结构发生挤压和凹陷，轮廓线不连续",
+    "接口位置": "未见明显接口错位或脱节，主要异常位于管身段",
+    "异常细节": "右侧2点至4点钟方向的管壁发生内凹，波纹管壁受压变形，导致管道过水断面局部减小"
+  },
+  "scan_findings": [
+    {
+      "position": "右侧管壁",
+      "description": "波纹管壁向内凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}

@@ -1,0 +1,32 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "confidence": 0,
+      "visible_features": [
+        "模型未返回缺陷列表"
+      ],
+      "name": "无法判断",
+      "category": "待复核",
+      "recommendation": "人工复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material_and_diameter": "HDPE波纹管，管径200mm",
+    "lighting_and_water": "光照条件良好，管道底部有少量积水，水位较低",
+    "outline": "管壁整体轮廓呈圆形，波纹管结构清晰，未见明显整体变形",
+    "bottom": "管底堆积了大量树根群，并伴有少量泥沙沉积",
+    "wall": "管壁表面有树根附着并延伸",
+    "joint": "树根疑似从管节接口或缝隙处穿入并向管内蔓延",
+    "abnormal_details": "画面中央及中下部（红箭头所指区域）有大量黄褐色、深褐色树根交错缠绕，形成树根群，占据了管道下部的大量空间"
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "SG",
+    "grade": 3,
+    "confidence": 0.95
+  }
+}

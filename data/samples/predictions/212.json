@@ -1,0 +1,32 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "grade": 3,
+      "description": "管底泥沙连续沉积，淤积厚度在管径的20%~40%之间（约30%），属3级中度沉积。",
+      "confidence": 0.9,
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "observation": {
+    "material": "HDPE",
+    "diameter": 200,
+    "lighting_water": "光照适中，右侧视线受雾气或镜头污渍影响较为模糊；管底有少量积水，主要被厚实的泥沙覆盖",
+    "profile": "管道截面轮廓大体呈圆形，未见明显变形",
+    "bottom_state": "管底存在连续且平缓的泥沙淤积，抬高了管底平面",
+    "wall_state": "左侧可见清晰的波纹管内壁，未见破裂或脱落；右侧受模糊遮挡，但整体轮廓尚存",
+    "joints": "未见明显的错位、脱节或接口材料脱落",
+    "anomaly_details": "管底淤泥和砂石连续堆积，淤积高度约占管径的30%左右，导致过水断面明显缩减"
+  },
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 3,
+    "confidence": 0.85
+  }
+}

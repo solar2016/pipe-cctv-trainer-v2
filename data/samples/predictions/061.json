@@ -1,0 +1,31 @@
+{
+  "defects": [
+    {
+      "code": "ZA",
+      "grade": 3,
+      "confidence": 0.78,
+      "name": "障碍物",
+      "category": "功能性缺陷",
+      "recommendation": "特殊疏通处理"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 3,
+    "confidence": 0.82
+  },
+  "unknown_route": {
+    "routed": false,
+    "from_code": "ZA",
+    "from_grade": 3,
+    "from_confidence": 0.78,
+    "candidate_codes": [
+      "ZA"
+    ],
+    "reason": "箭头处可见管底有明显块状、团状异物/硬块堆积，形态不平缓且呈独立阻挡物特征，影响过流；未见管壁连续变形证据，也不像连续平缓沉积层，ZA证据较充分。"
+  }
+}

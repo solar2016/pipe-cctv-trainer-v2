@@ -1,0 +1,38 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.72,
+      "visible_features": [
+        "红色箭头指向管壁左上侧可见线状裂开痕迹",
+        "局部管壁表面出现不连续暗缝及疑似翘起边缘",
+        "管道整体截面形状未见明显坍塌或大范围破碎"
+      ],
+      "recommendation": "局部现场固化法修复或开挖处理",
+      "category": "结构性缺陷"
+    },
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "grade": 2,
+      "confidence": 0.55,
+      "visible_features": [
+        "管底可见连续泥沙或淤积物",
+        "沉积物沿管底低位分布并占据部分过水断面"
+      ],
+      "recommendation": "疏通处理",
+      "category": "功能性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段图像显示，红色箭头所指左上侧管壁存在明显线状开裂或裂口特征，局部呈暗缝状并伴有边缘不连续，符合破裂缺陷初判，暂按2级裂口考虑。管底另可见连续沉积物，占据一定过水断面，考虑存在轻至中度沉积。建议结合现场视频连续帧复核裂口长度、开口宽度及是否伴随渗漏或变形。",
+  "needs_human_review": true,
+  "secondary_observations": [
+    "管壁内表面存在较多附着污物，局部影响裂缝边界辨识",
+    "图像可见水流及管底淤积，可能遮挡部分缺陷"
+  ],
+  "review_stage": "first_pass",
+  "fewshot_used": 6
+}

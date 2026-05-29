@@ -1,0 +1,6 @@
+{
+  "sample_id": "123",
+  "anchor_type": "boundary",
+  "target_code": "PL",
+  "note": "AI判断正确但置信度仅56%，边界模糊"
+}

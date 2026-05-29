@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.49,
+        0.01,
+        0.58,
+        0.18
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.08,
+      "defect_ratio_desc": "缺陷约占管壁局部区域的8%",
+      "defect_continuity": "孤立",
+      "position_detail": "管顶12点方向",
+      "visible_features": [
+        "管壁材料出现撕裂、破损，内壁不连续"
+      ],
+      "recommendation": "进行局部修复",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在5.01m处，管顶12点方向存在局部破裂（PL）缺陷，HDPE内壁呈现撕裂破损，建议结合整体管网状况进行局部修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径300",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面基本呈圆形，管体未见明显变形",
+    "管底形态": "管底有少量水流，无明显沉积物",
+    "管壁表面": "管顶12点钟方向有明显的局部破损和撕裂迹象",
+    "接口位置": "未见明显接口异常",
+    "异常细节": "红色箭头指向的管顶区域，HDPE材质内壁出现撕裂状破损，管壁材料不连续"
+  },
+  "scan_findings": [
+    {
+      "position": "管顶12点方向",
+      "description": "管壁材料破损、撕裂",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

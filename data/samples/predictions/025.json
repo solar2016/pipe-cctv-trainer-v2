@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头所指为管壁右侧附着的白色粗糙物，形态更像管壁结垢或附着物，并非清晰可辨的独立外来障碍物；同时管底可见块状/泥沙混合物，存在ZA与JG/CJ混淆，当前ZA证据不足，建议人工复核。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头所指为管壁右侧附着的白色粗糙物，形态更像管壁结垢或附着物，并非清晰可辨的独立外来障碍物；同时管底可见块状/泥沙混合物，存在ZA与JG/CJ混淆，当前ZA证据不足，建议人工复核。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "ZA",
+    "grade": 3,
+    "confidence": 0.78
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "ZA",
+    "from_grade": 3,
+    "from_confidence": 0.72,
+    "candidate_codes": [
+      "ZA",
+      "JG",
+      "CJ"
+    ],
+    "reason": "箭头所指为管壁右侧附着的白色粗糙物，形态更像管壁结垢或附着物，并非清晰可辨的独立外来障碍物；同时管底可见块状/泥沙混合物，存在ZA与JG/CJ混淆，当前ZA证据不足，建议人工复核。"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "JK",
+      "name": "接口材料脱落",
+      "grade": 3,
+      "confidence": 0.85,
+      "bbox": [
+        0.35,
+        0.32,
+        0.75,
+        0.68
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.3,
+      "defect_ratio_desc": "脱落的接口材料横跨管腔，约占管腔截面积的30%",
+      "defect_continuity": "孤立",
+      "position_detail": "管腔中部偏右侧接口处",
+      "visible_features": [
+        "白色均匀弧形条带自管壁脱落悬挂"
+      ],
+      "recommendation": "建议安排人员进行局部修复，重新塞紧或清除脱落的接口材料，避免挂碍杂物造成堵塞",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在D:30.94m处存在接口材料脱落（JK）缺陷。图像显示右侧接口处有一条白色的均匀弧形橡胶圈/密封条脱落并横跨管腔，已对过水断面造成一定阻碍，建议及时进行修复处理。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE 塑料管，管径 300mm",
+    "光照水位": "光照正常，管壁有高光反光，低水位",
+    "整体轮廓": "管腔截面基本呈圆形，但管腔内部有一条明显的弧形条状物横跨，影响过水断面",
+    "管底形态": "管底有少量积水，未见明显泥沙沉积",
+    "管壁表面": "管壁表面纹理呈环状波纹，右侧管壁有白色条状物剥离并突入管腔",
+    "接口位置": "右侧接口处疑似有密封材料脱落",
+    "异常细节": "一条白色的均匀弧形条带（疑似接口橡胶密封圈或管壁缠绕结构层）从右侧管壁/接口处脱落，横跨管腔中部，呈半环状悬挂"
+  },
+  "scan_findings": [
+    {
+      "position": "管腔中部偏右",
+      "description": "白色弧形条状物横跨管腔",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

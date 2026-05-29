@@ -1,0 +1,34 @@
+{
+  "focus_dimensions": [
+    {
+      "dimension": "confusion",
+      "severity": "high",
+      "affected_codes": [
+        "ZA",
+        "CJ",
+        "BX",
+        "TJ"
+      ],
+      "evidence": "ZA与CJ之间存在严重的双向混淆（ZA→CJ 14次，CJ→ZA 4次），且BX被误判为TJ达7次。这些混淆直接导致了ZA和TJ的F1分数低下（分别为0.597和0.133）。",
+      "strategy": "在Prompt中补充ZA（障碍物）与CJ（沉积）的特征对比矩阵（如：ZA通常是外来孤立物体，CJ通常是连续的底部堆积物）；针对BX（变形）与TJ（脱节）增加几何特征区分指南，并引入Few-Shot微调示例展示两者的视觉差异。",
+      "expected_impact": "显著减少ZA与CJ、BX与TJ之间的误判，提升ZA、CJ、BX、TJ的精确率和召回率，预计宏平均F1提升0.1以上。"
+    },
+    {
+      "dimension": "low_recall",
+      "severity": "high",
+      "affected_codes": [
+        "TG",
+        "ZA",
+        "SG",
+        "QF"
+      ],
+      "evidence": "TG和QF的召回率均为0.000，ZA的召回率仅为0.479（支持度高达48），SG召回率仅为0.500。这表明系统对这些类别的漏检非常严重。",
+      "strategy": "针对TG和QF补充标准定义与典型图像特征描述，并在Prompt中增加这些低召回类别的正例Few-Shot；对ZA（障碍物）增加多场景（如树根、垃圾、砖石）的显式枚举，降低漏检率。",
+      "expected_impact": "攻克TG和QF的零召回困境，将ZA的召回率提升至0.7以上，从而大幅拉升整体宏平均F1。"
+    }
+  ],
+  "summary": "重点通过细化特征对比矩阵解决ZA与CJ、BX与TJ的混淆问题，并通过补充Few-Shot正例和显式枚举攻克TG、QF等类别的零召回及ZA的严重漏检。",
+  "skip_optimization": false,
+  "skip_reason": "",
+  "report_id": "eval_20260528_175432"
+}

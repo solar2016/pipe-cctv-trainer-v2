@@ -1,0 +1,36 @@
+{
+  "defects": [
+    {
+      "code": "UNKNOWN",
+      "name": "无法判断",
+      "grade": null,
+      "confidence": 0.4,
+      "visible_features": [
+        "箭头区域可见管底低位有白色不规则堆积/漂浮样物，但形态不够平缓连续，无法确认是管底沉积层，还是块状障碍物或浮渣；存在CJ/ZA/FZ混淆，证据不足。"
+      ],
+      "recommendation": "人工复核",
+      "category": "待复核"
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "主缺陷证据冲突，已路由为 UNKNOWN。原因：箭头区域可见管底低位有白色不规则堆积/漂浮样物，但形态不够平缓连续，无法确认是管底沉积层，还是块状障碍物或浮渣；存在CJ/ZA/FZ混淆，证据不足。",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "CJ",
+    "grade": 2,
+    "confidence": 0.68
+  },
+  "unknown_route": {
+    "routed": true,
+    "from_code": "CJ",
+    "from_grade": 2,
+    "from_confidence": 0.78,
+    "candidate_codes": [
+      "CJ",
+      "ZA",
+      "FZ"
+    ],
+    "reason": "箭头区域可见管底低位有白色不规则堆积/漂浮样物，但形态不够平缓连续，无法确认是管底沉积层，还是块状障碍物或浮渣；存在CJ/ZA/FZ混淆，证据不足。"
+  }
+}

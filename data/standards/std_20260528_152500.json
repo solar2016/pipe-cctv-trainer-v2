@@ -1,0 +1,365 @@
+{
+  "id": "std_20260528_152500",
+  "name": "民星路基地雨污水管道检测标准（合并版）",
+  "source_file": "合并自4份标准文档",
+  "uploaded_at": "2026-05-28T15:25:00",
+  "status": "parsed",
+  "defects": [
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "category": "功能性缺陷",
+      "definition": "杂质在管道底部沉淀淤积。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "沉积物厚度小于管径的 5%",
+          "score": 1
+        },
+        "2": {
+          "description": "沉积物厚度在管径的 5%~20%之间。",
+          "score": 3
+        },
+        "3": {
+          "description": "沉积物厚度在管径的 20%~40%。",
+          "score": 6
+        },
+        "4": {
+          "description": "沉积物厚度大于管径的 40%。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "JG",
+      "name": "结垢",
+      "category": "功能性缺陷",
+      "definition": "管道内壁上的附着物。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "硬质结垢造成的过水断面面积损失小于 15%；软质结垢造成的过水断面面积损失在 15%—25%之间",
+          "score": 1
+        },
+        "2": {
+          "description": "硬质结垢造成的过水断面面积损失在 15%~25%之间；软质结垢造成的过水断面面积损失大于 25%~50%。",
+          "score": 3
+        },
+        "3": {
+          "description": "硬质结垢造成的过水断面面积损失在 25%~50%之间。软质结垢造成的过水断面面积损失在 50%~70%之间。",
+          "score": 6
+        },
+        "4": {
+          "description": "硬质结垢造成的过水断面面积损失大于 50%。软质结垢造成的过水断面面积损失在 70%之间以上。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "ZA",
+      "name": "障碍物",
+      "category": "功能性缺陷",
+      "definition": "管道内影响过流的阻挡物。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "断面损失小于 5%。",
+          "score": 1
+        },
+        "2": {
+          "description": "断面损失为 5%~15%",
+          "score": 3
+        },
+        "3": {
+          "description": "断面损失为 15%~30%",
+          "score": 6
+        },
+        "4": {
+          "description": "断面损失大于 30%",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "SG",
+      "name": "树根",
+      "category": "功能性缺陷",
+      "definition": "单根树根或是树根群自然生长进入管道。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "过水面积损失量小于 5%。",
+          "score": 1
+        },
+        "2": {
+          "description": "过水面积损失量在 5%~15%之间。",
+          "score": 3
+        },
+        "3": {
+          "description": "过水面积损失量在 15%~30%之间。",
+          "score": 6
+        },
+        "4": {
+          "description": "过水面积损失量大于 30%",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "FZ",
+      "name": "浮渣",
+      "category": "功能性缺陷",
+      "definition": "管道内水面上的漂浮物（该缺陷须记入检测记录表，不参与计算）",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {}
+    },
+    {
+      "code": "QR",
+      "name": "异物侵入",
+      "category": "结构性缺陷",
+      "definition": "非管道系统附属设施的物体穿透管壁进入管内。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "异物在管道内水平中心线的上方，且占用过水断面小于 10%。",
+          "score": 1
+        },
+        "2": {
+          "description": "异物在管道内水平中心线的上方，且占用过水断面为 10%~20%或异物在管道内水平中心线下方，且占用过水断面小于 10%。",
+          "score": 3
+        },
+        "3": {
+          "description": "支管进入主管内的长度大于主管直径大于 20%；或者异物在管道内水平中心线的上方，且占用过水断面大于 20%或异物在管道内水平中心线下方，且占用过水断面为 10%~20%。",
+          "score": 6
+        },
+        "4": {
+          "description": "支管未接入到主管；或者异物在管道内水平中心线的下方，且占用过水断面大于 20%。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "SL",
+      "name": "渗漏",
+      "category": "结构性缺陷",
+      "definition": "管道外的水流入管道或是管道内的水漏出管外。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "滴漏: 水持续从缺陷点滴出，沿管壁流动。",
+          "score": 1
+        },
+        "2": {
+          "description": "线漏:水持续从缺陷点流出，并脱离管壁流动。",
+          "score": 3
+        },
+        "3": {
+          "description": "涌漏:水从缺陷点涌出或大量喷出,涌漏水面的面积小于管道断面的 1/3。",
+          "score": 6
+        },
+        "4": {
+          "description": "涌漏:水从缺陷点涌出或大量喷出,涌漏水面的面积大于管道断面的 1/3。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "FS",
+      "name": "腐蚀",
+      "category": "结构性缺陷",
+      "definition": "管道内壁受侵蚀而流失或剥落，出现麻面或露出钢筋。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "轻度腐蚀：表面剥落显露粗骨料或钢筋。",
+          "score": 1
+        },
+        "2": {
+          "description": "中度腐蚀：表面剥落显露粗骨料或钢筋。",
+          "score": 3
+        }
+      }
+    },
+    {
+      "code": "CW",
+      "name": "错位",
+      "category": "结构性缺陷",
+      "definition": "同一接口的两个管口产生横向偏离，未处于管道的正确位置。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "轻度错位：错位距离少于管壁厚度1/2。",
+          "score": 1
+        },
+        "2": {
+          "description": "中度错位：错位距离在管壁厚度1/2及1倍之间。",
+          "score": 3
+        },
+        "3": {
+          "description": "重度错位：错位距离为管壁厚度1至2倍。",
+          "score": 6
+        },
+        "4": {
+          "description": "严重错位：错位距离为管壁厚度2倍以上。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "QF",
+      "name": "蛇形起伏",
+      "category": "功能性缺陷",
+      "definition": "接口位偏移，管道竖向或横向发生明显蛇形的变化，在低处形成洼水。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "水深/管径≤20%",
+          "score": 1
+        },
+        "2": {
+          "description": "20%<水位高/管径≤40%",
+          "score": 3
+        },
+        "3": {
+          "description": "40%<水位高/管径≤60%",
+          "score": 6
+        },
+        "4": {
+          "description": "水位高/管径>60%",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "category": "结构性缺陷",
+      "definition": "两根管道的端部未充分接合或接口脱离。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "轻度脱节：管道端部已有少量泥土挤入。",
+          "score": 1
+        },
+        "2": {
+          "description": "中度脱节：脱节距离为管壁厚度1/2~1倍",
+          "score": 3
+        },
+        "3": {
+          "description": "重度脱节：脱节距离处于管壁厚度1~2倍之间。",
+          "score": 6
+        },
+        "4": {
+          "description": "严重脱节：脱节距离为管壁厚度2倍以上。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "JK",
+      "name": "接口材料脱落",
+      "category": "结构性缺陷",
+      "definition": "橡胶圈、沥青、水泥等类似的接口材料进入管道。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "接口材料可在管道内水平方向中心线上部可见",
+          "score": 1
+        },
+        "2": {
+          "description": "接口材料可在管道内水平方向中心线下部可见",
+          "score": 3
+        }
+      }
+    },
+    {
+      "code": "AJ",
+      "name": "支管暗接",
+      "category": "结构性缺陷",
+      "definition": "支管未通过检查井直接侧向接入主管。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "支管进入主管内的长度小于主管直径10%。",
+          "score": 1
+        },
+        "2": {
+          "description": "支管进入主管内的长度在主管直径10%~20%之间。",
+          "score": 3
+        }
+      }
+    },
+    {
+      "code": "PL",
+      "name": "破裂",
+      "category": "结构性缺陷",
+      "definition": "管道的外部压力超过自身的承受力致使管子发生破裂。其形式有纵向、环向和复合三种。",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "裂痕：当下列一个或多个情况存在时：1) 在管壁上可见细裂痕。2) 在管壁上由细裂缝处冒出少量沉积物。3) 轻度剥落",
+          "score": 1
+        },
+        "2": {
+          "description": "裂口：破裂处已形成明显间隙，但管道的形状未受影响且破裂无脱落。",
+          "score": 3
+        },
+        "3": {
+          "description": "破碎：管壁破裂或脱落处所剩碎片的环向覆盖范围小于弧长60°。",
+          "score": 6
+        },
+        "4": {
+          "description": "坍塌：当下列一个或多个情况存在时：1) 管道材料裂痕、裂口或破碎处边缘环向覆盖范围大于弧长60°。2) 管壁材料发生脱落的环向范围大于弧长60°。",
+          "score": 10
+        }
+      }
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "category": "结构性缺陷",
+      "definition": "管道受外力挤压造成形状变异",
+      "evidence_cues": "",
+      "recommendation": "",
+      "grades": {
+        "1": {
+          "description": "变形小于管道直径的5%。",
+          "score": 1
+        },
+        "2": {
+          "description": "变形为管道直径的5%~15%。",
+          "score": 3
+        },
+        "3": {
+          "description": "变形为管道直径的15~25%",
+          "score": 6
+        },
+        "4": {
+          "description": "变形大于管道直径的25%",
+          "score": 10
+        }
+      }
+    }
+  ],
+  "evaluation_formulas": {},
+  "evaluation_params": {
+    "K": null,
+    "E": null,
+    "T": null
+  },
+  "distance_rules": {}
+}

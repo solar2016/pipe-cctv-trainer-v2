@@ -1,0 +1,17 @@
+{
+  "evaluation_id": "eval_20260528_171223",
+  "evaluation_time": "",
+  "total_samples": 10,
+  "predicted_samples": 0,
+  "confusion_matrix": {},
+  "metrics": {
+    "macro_avg": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0
+    }
+  },
+  "confusion_pairs": [],
+  "summary": "总体准确率: 0.0%\n宏平均 F1: 0.000"
+}

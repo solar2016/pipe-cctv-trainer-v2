@@ -1,0 +1,51 @@
+{
+  "defects": [
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "grade": 2,
+      "confidence": 0.85,
+      "bbox": [
+        0.15,
+        0.15,
+        0.83,
+        0.95
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.45,
+      "defect_ratio_desc": "脱节接口占据大部分画面中心区域",
+      "defect_continuity": "孤立",
+      "position_detail": "接口位置",
+      "visible_features": [
+        "接口处纵向分离",
+        "管端脱开露出白色环状间隙"
+      ],
+      "recommendation": "进行局部非开挖修复或注浆封堵",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "中",
+  "report_text": "该管段在接口处存在明显的脱节缺陷，管端纵向脱开，露出环状间隙，建议及时进行修复处理以防引发渗漏或地基流失。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径 300",
+    "光照水位": "正常光照，有轻微雾气，低水位",
+    "整体轮廓": "截面基本呈圆形，但在接口处轮廓不连续",
+    "管底形态": "管底有少量黑色堆积物",
+    "管壁表面": "管壁表面未见明显破裂或变形",
+    "接口位置": "接口处纵向分离，管端明显脱开，露出环状间隙",
+    "异常细节": "红色箭头指向的接口位置，两节管道在纵向脱开，形成明显的白色环状间隙，表明发生了脱节。"
+  },
+  "scan_findings": [
+    {
+      "position": "接口处",
+      "description": "管端纵向脱开，露出环状间隙",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

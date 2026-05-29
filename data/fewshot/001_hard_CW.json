@@ -1,0 +1,6 @@
+{
+  "sample_id": "001",
+  "anchor_type": "hard",
+  "target_code": "CW",
+  "note": "AI误判为BX（置信度85%），场景：变形、管状、局部"
+}

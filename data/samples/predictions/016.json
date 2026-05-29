@@ -1,0 +1,23 @@
+{
+  "defects": [
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "grade": 1,
+      "type": "功能性缺陷",
+      "evidence": "管底存在少量连续性泥砂/杂质沉积，厚度估计小于管径5%。",
+      "confidence": 0.62,
+      "category": "功能性缺陷",
+      "recommendation": ""
+    }
+  ],
+  "overall_risk": "无法判断",
+  "report_text": "",
+  "needs_human_review": true,
+  "review_stage": "second_pass",
+  "first_pass_summary": {
+    "code": "UNKNOWN",
+    "grade": null,
+    "confidence": 0.55
+  }
+}

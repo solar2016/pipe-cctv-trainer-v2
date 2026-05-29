@@ -1,0 +1,52 @@
+{
+  "defects": [
+    {
+      "code": "QR",
+      "name": "异物侵入",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.32,
+        0.61,
+        0.76,
+        0.84
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.35,
+      "defect_ratio_desc": "侵入异物约占管道断面空间的35%",
+      "defect_continuity": "孤立",
+      "position_detail": "管底偏右",
+      "visible_features": [
+        "黑色环状线缆",
+        "金属光泽细丝",
+        "乱序堆积缠绕"
+      ],
+      "recommendation": "组织相关权属单位进行线缆迁改或清理，恢复管道过水断面",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段在D:4.26m处存在异物侵入（QR），表现为大量电缆/光缆状异物在管底缠绕堆积，严重影响排水通畅，建议尽快清理并核实线缆权属。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE波纹管，管径 300mm",
+    "光照水位": "正常光照，低水位",
+    "整体轮廓": "截面呈圆形，管壁波纹结构完整",
+    "管底形态": "管底积水，并有大量线缆状异物堆积缠绕",
+    "管壁表面": "管壁表面未见明显破损或变形",
+    "接口位置": "接口处未见明显异常",
+    "异常细节": "管底有黑色及银灰色细长线缆（疑似电缆、光缆或钢丝）呈环状、乱序缠绕堆积，占据管道断面下半部分空间，严重阻碍排水"
+  },
+  "scan_findings": [
+    {
+      "position": "管底及中部偏右",
+      "description": "乱序缠绕的电缆/光缆状异物",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "prompt_version": "v1.0.0",
+  "prompt_reason": "v1.0.0：7步观察 + 混淆嵌入观察 + 按需深入扫描",
+  "fewshot_used": 8
+}

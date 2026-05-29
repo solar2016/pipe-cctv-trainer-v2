@@ -1,0 +1,50 @@
+{
+  "defects": [
+    {
+      "code": "BX",
+      "name": "变形",
+      "grade": 3,
+      "confidence": 0.88,
+      "bbox": [
+        0.22,
+        0.25,
+        0.78,
+        0.52
+      ],
+      "bbox_format": "归一化坐标 [x1, y1, x2, y2]，值域 0-1，相对于图片宽高",
+      "defect_ratio": 0.25,
+      "defect_ratio_desc": "变形下凹幅度约占管道直径的20%左右",
+      "defect_continuity": "连续",
+      "position_detail": "管道顶部正上方",
+      "visible_features": [
+        "管顶向内塌陷",
+        "截面失圆扁平",
+        "HDPE管壁连续性弯曲"
+      ],
+      "recommendation": "局部现场固化法修复或开挖更换管道",
+      "category": "结构性缺陷"
+    }
+  ],
+  "overall_risk": "高",
+  "report_text": "该管段（HDPE材质，管径200）在检测中发现明显的结构性缺陷。管道顶部受外力挤压发生严重向内凹陷变形（BX），变形量估算在15%至25%之间，评定为3级变形。此缺陷导致管道过水断面显著减小，存在进一步塌陷的风险，建议及时进行开挖修复或局部固化修复。",
+  "needs_human_review": true,
+  "observation": {
+    "材质管径": "HDPE管，管径200",
+    "光照水位": "正常光照，中低水位，管底有积水",
+    "整体轮廓": "截面严重失圆，顶部向内凹陷变形",
+    "管底形态": "管底有积水，水面平静，未见明显异常堆积",
+    "管壁表面": "管壁上半部分出现明显的向内凹陷，表面轮廓不连续，呈现扁平挤压状",
+    "接口位置": "未见明显接口错位或脱节",
+    "异常细节": "管道顶部约11点至1点钟方向出现明显的向下塌陷，管体受压变形，导致过水断面明显减小"
+  },
+  "scan_findings": [
+    {
+      "position": "管道顶部",
+      "description": "管壁向内凹陷变形",
+      "confidence_level": "high"
+    }
+  ],
+  "secondary_observations": [],
+  "review_stage": "first_pass",
+  "fewshot_used": 8
+}
